@@ -1,0 +1,22 @@
+:host {
+    display: block;
+}
+
+.display-3 {
+    word-break: break-word;
+}
+
+.home-news-content {
+    background-color: var(--ds-home-news-background-color);
+    background-image: url("/assets/frc/images/home-banner.jpg");
+    background-size: cover;
+
+}
+
+a {
+    color: var(--ds-home-news-link-color);
+
+    &:hover {
+        color: var(--ds-home-news-link-hover-color);
+    }
+}
