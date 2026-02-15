@@ -36,10 +36,15 @@ div#header-navbar-wrapper {
 
 header .dropdown-menu a {
     color: white !important;
+
+    #user-menu-dropdown li a {
+        color: #fff !important;
+    }
 }
 
-.dropdown-item:hover {
-    background-color: var(--frc-light-brown) !important;
+header .dropdown-menu .text-muted,
+header .dropdown-menu .username-email-wrapper {
+    color: #fff !important;
 }
 
 .btn:disabled,
@@ -87,4 +92,12 @@ fieldset:disabled .btn {
     border-color: #fff !important;
     color: var(--frc-deep-brown) !important;
     box-shadow: none !important;
+}
+
+.dropdown-item:hover {
+    background-color: var(--frc-light-brown) !important;
+}
+
+.dso-edit-menu .dropdown-toggle {
+    color: #fff !important;
 }
