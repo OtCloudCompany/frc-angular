@@ -5,10 +5,9 @@ import { ItemPageTitleFieldComponent as BaseComponent } from '../../../../../../
 
 @Component({
   selector: 'ds-themed-item-page-title-field',
-  // templateUrl: './item-page-title-field.component.html',
-  templateUrl: '../../../../../../../../app/item-page/simple/field-components/specific-field/title/item-page-title-field.component.html',
+  templateUrl: './item-page-title-field.component.html',
   imports: [
-    TranslateModule,
+    TranslateModule
   ],
 })
 export class ItemPageTitleFieldComponent extends BaseComponent {

@@ -13,11 +13,9 @@ import { CollectionsComponent } from '../../../../../../../app/item-page/field-c
 import { ThemedMediaViewerComponent } from '../../../../../../../app/item-page/media-viewer/themed-media-viewer.component';
 import { MiradorViewerComponent } from '../../../../../../../app/item-page/mirador-viewer/mirador-viewer.component';
 import { ThemedFileSectionComponent } from '../../../../../../../app/item-page/simple/field-components/file-section/themed-file-section.component';
-import { ItemPageAbstractFieldComponent } from '../../../../../../../app/item-page/simple/field-components/specific-field/abstract/item-page-abstract-field.component';
 import { ItemPageCcLicenseFieldComponent } from '../../../../../../../app/item-page/simple/field-components/specific-field/cc-license/item-page-cc-license-field.component';
 import { ItemPageDateFieldComponent } from '../../../../../../../app/item-page/simple/field-components/specific-field/date/item-page-date-field.component';
 import { GenericItemPageFieldComponent } from '../../../../../../../app/item-page/simple/field-components/specific-field/generic/generic-item-page-field.component';
-import { GeospatialItemPageFieldComponent } from '../../../../../../../app/item-page/simple/field-components/specific-field/geospatial/geospatial-item-page-field.component';
 import { ThemedItemPageTitleFieldComponent } from '../../../../../../../app/item-page/simple/field-components/specific-field/title/themed-item-page-field.component';
 import { ItemPageUriFieldComponent } from '../../../../../../../app/item-page/simple/field-components/specific-field/uri/item-page-uri-field.component';
 import { UntypedItemComponent as BaseComponent } from '../../../../../../../app/item-page/simple/item-types/untyped-item/untyped-item.component';
@@ -27,26 +25,28 @@ import { MetadataFieldWrapperComponent } from '../../../../../../../app/shared/m
 import { listableObjectComponent } from '../../../../../../../app/shared/object-collection/shared/listable-object/listable-object.decorator';
 import { ThemedResultsBackButtonComponent } from '../../../../../../../app/shared/results-back-button/themed-results-back-button.component';
 import { ThemedThumbnailComponent } from '../../../../../../../app/thumbnail/themed-thumbnail.component';
+import { ItemPageNavbarComponent } from 'src/themes/frc/app/custom-apps/item-page-navbar/item-page-navbar.component';
+import { FrcAbstractFieldComponent } from 'src/themes/frc/app/custom-apps/frc-abstract-field/frc-abstract-field.component';
+import { UsageMetricsComponent } from 'src/themes/frc/app/custom-apps/usage-metrics/usage-metrics.component';
+import { UsageStatisticsComponent } from 'src/themes/frc/app/custom-apps/usage-statistics/usage-statistics.component';
 
-@listableObjectComponent(Item, ViewMode.StandalonePage, Context.Any, 'custom')
+@listableObjectComponent(Item, ViewMode.StandalonePage, Context.Any, 'frc')
 @Component({
   selector: 'ds-untyped-item',
   // styleUrls: ['./untyped-item.component.scss'],
   styleUrls: [
     '../../../../../../../app/item-page/simple/item-types/untyped-item/untyped-item.component.scss',
   ],
-  // templateUrl: './untyped-item.component.html',
-  templateUrl: '../../../../../../../app/item-page/simple/item-types/untyped-item/untyped-item.component.html',
+  templateUrl: './untyped-item.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     AsyncPipe,
     CollectionsComponent,
     DsoEditMenuComponent,
     GenericItemPageFieldComponent,
-    GeospatialItemPageFieldComponent,
-    ItemPageAbstractFieldComponent,
     ItemPageCcLicenseFieldComponent,
     ItemPageDateFieldComponent,
+    ItemPageNavbarComponent,
     ItemPageUriFieldComponent,
     MetadataFieldWrapperComponent,
     MiradorViewerComponent,
@@ -58,6 +58,9 @@ import { ThemedThumbnailComponent } from '../../../../../../../app/thumbnail/the
     ThemedResultsBackButtonComponent,
     ThemedThumbnailComponent,
     TranslateModule,
+    FrcAbstractFieldComponent,
+    UsageMetricsComponent,
+    UsageStatisticsComponent,
   ],
 })
 export class UntypedItemComponent extends BaseComponent {

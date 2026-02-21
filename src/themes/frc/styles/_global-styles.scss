@@ -9,6 +9,21 @@
     --frc-yellow: #ffc425;
 }
 
+.bg-frc-light-brown {
+    background-color: var(--frc-light-brown) !important;
+}
+
+.bg-frc-deep-brown {
+    background-color: var(--frc-deep-brown) !important;
+}
+
+.text-frc-deep-brown {
+    color: var(--frc-deep-brown) !important;
+}
+
+.text-frc-light-brown {
+    color: var(--frc-light-brown) !important;
+}
 
 .dropdown-toggle {
     color: var(--frc-deep-brown) !important;
@@ -100,4 +115,34 @@ fieldset:disabled .btn {
 
 .dso-edit-menu .dropdown-toggle {
     color: #fff !important;
+}
+
+.navbar>.container,
+.navbar>.container-fluid,
+.navbar>.container-sm,
+.navbar>.container-md,
+.navbar>.container-lg,
+.navbar>.container-xl,
+.navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.itempage-abstract {
+    display: grid !important;
+}
+
+#itemPageSidebar {
+
+    // ds-metadata-field-wrapper,
+    ds-media-viewer .media-viewer {
+        position: relative;
+        border: 1px solid red;
+        height: 150px;
+        min-width: 75px;
+        display: inline-block;
+    }
+
 }
