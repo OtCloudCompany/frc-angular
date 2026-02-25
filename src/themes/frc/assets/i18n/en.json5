@@ -1,4 +1,8 @@
 {
+  "item.page.referencedby": "Referenced By",
+
+  "item.page.referencedbyDuke": "Referenced By Duke",
+  
   "401.help": "You're not authorized to access this page. You can use the button below to get back to the home page.",
 
   "401.link.home-page": "Take me to the home page",
@@ -6608,8 +6612,6 @@
   "item.page.review": "Review",
 
   "item.page.referenced": "Referenced By",
-
-  "item.page.referencedby": "Referenced By",
 
   "item.page.supplemented": "Supplemented By",
   "item.page.coverage": "Coverage",
