@@ -144,5 +144,11 @@ fieldset:disabled .btn {
         min-width: 175px;
         display: inline-block;
     }
+}
 
+// .search-sidebar-content 
+.sidebar-content .facet-filter,
+.setting-option {
+    box-shadow: 0 0 5px 3px #eee !important;
+    border: none !important;
 }
