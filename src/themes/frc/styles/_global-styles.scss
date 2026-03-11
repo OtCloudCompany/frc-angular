@@ -152,3 +152,19 @@ fieldset:disabled .btn {
     box-shadow: 0 0 5px 3px #eee !important;
     border: none !important;
 }
+
+.homepage-sidebar {
+    position: sticky;
+    top: 2rem;
+
+    .browse nav,
+    .my-account nav {
+        border-right: var(--frc-deep-brown) solid 2px;
+        // padding-right: 1rem;
+    }
+
+    nav .nav-link:hover {
+        background-color: #eee !important;
+        border-left: 4px solid var(--frc-deep-brown);
+    }
+}

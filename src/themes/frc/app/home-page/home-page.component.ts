@@ -9,13 +9,14 @@ import { RecentItemListComponent } from '../../../../app/home-page/recent-item-l
 import { ThemedTopLevelCommunityListComponent } from '../../../../app/home-page/top-level-community-list/themed-top-level-community-list.component';
 import { SuggestionsPopupComponent } from '../../../../app/notifications/suggestions/popup/suggestions-popup.component';
 import { ThemedConfigurationSearchPageComponent } from '../../../../app/search-page/themed-configuration-search-page.component';
+import { HomePageSidebarComponent } from '../custom-apps/home-page-sidebar/home-page-sidebar.component';
 
 @Component({
   selector: 'ds-themed-home-page',
   // styleUrls: ['./home-page.component.scss'],
   styleUrls: ['../../../../app/home-page/home-page.component.scss'],
-  // templateUrl: './home-page.component.html'
-  templateUrl: '../../../../app/home-page/home-page.component.html',
+  templateUrl: './home-page.component.html',
+  // templateUrl: '../../../../app/home-page/home-page.component.html',
   imports: [
     HomeCoarComponent,
     NgTemplateOutlet,
@@ -24,6 +25,7 @@ import { ThemedConfigurationSearchPageComponent } from '../../../../app/search-p
     ThemedConfigurationSearchPageComponent,
     ThemedHomeNewsComponent,
     ThemedTopLevelCommunityListComponent,
+    HomePageSidebarComponent,
     TranslateModule,
   ],
 })
