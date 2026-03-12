@@ -7355,4 +7355,22 @@
   "search.filters.filter.coverage.label": "Search Coverage",
 
   "search.filters.applied.f.coverage": "Coverage",
+
+  "menu.section.browse_community_by_coverage": "By Coverage",
+
+  "browse.metadata.coverage": "Coverage",
+
+  "browse.metadata.coverage.breadcrumbs": "Browse by Coverage",
+
+  "browse.metadata.dateaccessioned": "Accessioned Date",
+
+  "browse.metadata.dateaccessioned.breadcrumbs": "Browse by Accessioned Date",
+
+  "menu.section.browse_community_by_dateaccessioned": "By Date Accessioned",
+
+  "vocabulary-treeview.tree.description.usjurisdictions": "US Jurisdictions",
+
+  "menu.section.browse_global_by_coverage": "By Coverage",
+
+  "menu.section.browse_global_by_dateaccessioned": "By Accessioned Date",
 }

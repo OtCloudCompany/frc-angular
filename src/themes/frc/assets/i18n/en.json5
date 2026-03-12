@@ -6,6 +6,15 @@
   "search.filters.filter.coverage.placeholder": "Coverage",
   "search.filters.filter.coverage.label": "Search Coverage",
   "search.filters.applied.f.coverage": "Coverage",
+  "menu.section.browse_global_by_coverage": "By Coverage",
+  "browse.metadata.coverage": "Coverage",
+  "browse.metadata.coverage.breadcrumbs": "Browse by Coverage",
+
+  "browse.metadata.dateaccessioned": "Accessioned Date",
+  "browse.metadata.dateaccessioned.breadcrumbs": "Browse by Accessioned Date",
+  "menu.section.browse_global_by_dateaccessioned": "By Accessioned Date",
+
+  "vocabulary-treeview.tree.description.usjurisdictions": "US Jurisdictions",
 
   "dso-selector.set-scope.community.button": "Search entire repository",
 
@@ -1046,6 +1055,7 @@
   "browse.empty": "No items to show.",
 
   "browse.metadata.author": "Author",
+  "browse.metadata.author.breadcrumbs": "Browse by Author",
 
   "browse.metadata.dateissued": "Issue Date",
 
@@ -1054,8 +1064,6 @@
   "browse.metadata.title": "Title",
 
   "browse.metadata.srsc": "Subject Category",
-
-  "browse.metadata.author.breadcrumbs": "Browse by Author",
 
   "browse.metadata.dateissued.breadcrumbs": "Browse by Date",
 
