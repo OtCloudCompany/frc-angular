@@ -25,6 +25,16 @@
     color: var(--frc-light-brown) !important;
 }
 
+.bg-info {
+    background-color: var(--frc-deep-brown) !important;
+}
+
+.btn-primary {
+    background-color: var(--frc-light-brown) !important;
+    border-color: var(--frc-light-brown) !important;
+    color: white !important;
+}
+
 .dropdown-toggle {
     color: var(--frc-deep-brown) !important;
 }
@@ -153,6 +163,10 @@ fieldset:disabled .btn {
     border: none !important;
 }
 
+.sidebar-content .facet-filter i {
+    color: var(--frc-light-brown) !important;
+}
+
 .homepage-sidebar {
     position: sticky;
     top: 2rem;
@@ -163,8 +177,20 @@ fieldset:disabled .btn {
         // padding-right: 1rem;
     }
 
+    nav .nav-link {
+        color: var(--frc-deep-brown) !important;
+    }
+
     nav .nav-link:hover {
         background-color: #eee !important;
         border-left: 4px solid var(--frc-deep-brown);
     }
+}
+
+li div div div .item-list-title {
+    color: var(--frc-light-brown) !important;
+}
+
+li div div div .item-list-title:hover {
+    color: var(--frc-light-brown) !important;
 }
