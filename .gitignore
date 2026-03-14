@@ -78,3 +78,6 @@ yarn.lock
 /nbproject/
 junit.xml
 /src/mirador-viewer/config.local.js
+
+*.py
+*.csv

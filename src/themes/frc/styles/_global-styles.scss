@@ -35,6 +35,14 @@
     color: white !important;
 }
 
+.bg-secondary {
+    background-color: var(--frc-deep-brown) !important;
+}
+
+a {
+    color: var(--frc-light-brown) !important;
+}
+
 .dropdown-toggle {
     color: var(--frc-deep-brown) !important;
 }
@@ -193,4 +201,19 @@ li div div div .item-list-title {
 
 li div div div .item-list-title:hover {
     color: var(--frc-light-brown) !important;
+}
+
+.item-list-abstract .btn-link {
+    color: var(--frc-light-brown) !important;
+}
+
+ds-home-page .btn-link {
+    color: var(--frc-light-brown) !important;
+}
+
+.page-link.active,
+.active>.page-link {
+    color: white !important;
+    background-color: var(--frc-deep-brown);
+    border-color: var(--frc-deep-brown);
 }

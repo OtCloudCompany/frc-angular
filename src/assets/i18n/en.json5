@@ -7373,4 +7373,18 @@
   "menu.section.browse_global_by_coverage": "By Coverage",
 
   "menu.section.browse_global_by_dateaccessioned": "By Accessioned Date",
+
+  "browse.comcol.by.coverage": "By Coverage",
+
+  "browse.comcol.by.dateaccessioned": "By Accessioned Date",
+
+  "item.page.referencedbyGoogle": "Referenced By Google",
+
+  "item.page.referencedbyHathi": "Referenced By Hathi",
+
+  "item.page.referencedbyGale": "Referenced By Gale",
+
+  "item.page.referencedbyAvalon": "Referenced By Avalon",
+
+  "item.page.referencedbyDelaware": "Referenced By Delaware",
 }

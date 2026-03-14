@@ -41,19 +41,23 @@
             [label]="'item.page.review'">
         </ds-item-page-uri-field>
         <ds-item-page-uri-field [item]="object" [fields]="['dc.relation.isreferencedbyDuke']"
-            [label]="'item.page.referencedbyDuke'">
+            [label]="'item.page.referencedbyDuke'" />
+        <ds-item-page-uri-field [item]="object" [fields]="['dc.relation.isreferencedbyGoogle']"
+            [label]="'item.page.referencedbyGoogle'" />
+        <ds-item-page-uri-field [item]="object" [fields]="['dc.relation.isreferencedbyHathi']"
+            [label]="'item.page.referencedbyHathi'" />
+        <ds-item-page-uri-field [item]="object" [fields]="['dc.relation.isreferencedbyGale']"
+            [label]="'item.page.referencedbyGale'" />
+        <ds-item-page-uri-field [item]="object" [fields]="['dc.relation.isreferencedbyAvalon']"
+            [label]="'item.page.referencedbyAvalon'" />
+        <ds-item-page-uri-field [item]="object" [fields]="['dc.relation.isreferencedbyDelaware']"
+            [label]="'item.page.referencedbyDelaware'">
         </ds-item-page-uri-field>
         <ds-item-page-uri-field [item]="object" [fields]="['dc.relation.isreferencedby']"
             [label]="'item.page.referencedby'">
         </ds-item-page-uri-field>
         <ds-item-page-cc-license-field [item]="object" [variant]="'full'">
         </ds-item-page-cc-license-field>
-        <div>
-            <a class="btn btn-outline-primary" [routerLink]="[itemPageRoute + '/full']" role="button" role="button"
-                tabindex="0">
-                <i class="fas fa-info-circle"></i> {{"item.page.link.full" | translate}}
-            </a>
-        </div>
         <ds-usage-statistics [object]="object"></ds-usage-statistics>
     </div>
     <div class="col-12 col-md-4 text-end" id="itemPageSidebar">
@@ -95,5 +99,11 @@
         <ds-generic-item-page-field [item]="object" [fields]="['dc.publisher']" [label]="'item.page.publisher'">
         </ds-generic-item-page-field>
         <ds-usage-metrics [item]="object"></ds-usage-metrics>
+        <div>
+            <a class="btn btn-outline-primary" [routerLink]="[itemPageRoute + '/full']" role="button" role="button"
+                tabindex="0">
+                <i class="fas fa-info-circle"></i> {{"item.page.link.full" | translate}}
+            </a>
+        </div>
     </div>
 </div>

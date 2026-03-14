@@ -1,6 +1,11 @@
 {
   "item.page.referencedby": "Referenced By",
   "item.page.referencedbyDuke": "Referenced By Duke",
+  "item.page.referencedbyGoogle": "Referenced By Google",
+  "item.page.referencedbyHathi": "Referenced By Hathi",
+  "item.page.referencedbyGale": "Referenced By Gale",
+  "item.page.referencedbyAvalon": "Referenced By Avalon",
+  "item.page.referencedbyDelaware": "Referenced By Delaware",
 
   "search.filters.filter.coverage.head": "Coverage",
   "search.filters.filter.coverage.placeholder": "Coverage",
@@ -13,6 +18,9 @@
   "browse.metadata.dateaccessioned": "Accessioned Date",
   "browse.metadata.dateaccessioned.breadcrumbs": "Browse by Accessioned Date",
   "menu.section.browse_global_by_dateaccessioned": "By Accessioned Date",
+
+  "browse.comcol.by.coverage": "By Coverage",
+  "browse.comcol.by.dateaccessioned": "By Accessioned Date",
 
   "vocabulary-treeview.tree.description.usjurisdictions": "US Jurisdictions",
 
