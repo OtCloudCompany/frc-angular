@@ -39,6 +39,17 @@
     background-color: var(--frc-deep-brown) !important;
 }
 
+.btn-outline-primary {
+    border-color: var(--frc-yellow) !important;
+    color: var(--frc-light-brown) !important;
+
+    &:hover {
+        background-color: var(--frc-light-brown) !important;
+        border-color: var(--frc-light-brown) !important;
+        color: white !important;
+    }
+}
+
 a {
     color: var(--frc-light-brown) !important;
 }
@@ -207,7 +218,8 @@ li div div div .item-list-title:hover {
     color: var(--frc-light-brown) !important;
 }
 
-ds-home-page .btn-link {
+ds-home-page .btn-link,
+ds-truncatable-part .btn-link {
     color: var(--frc-light-brown) !important;
 }
 
@@ -216,4 +228,22 @@ ds-home-page .btn-link {
     color: white !important;
     background-color: var(--frc-deep-brown);
     border-color: var(--frc-deep-brown);
+}
+
+nav.comcol-browse .list-group-item.active {
+    background-color: var(--frc-deep-brown);
+    border-color: var(--frc-deep-brown);
+    color: white !important;
+}
+
+.pagination-masked #paginationControls {
+    background-color: var(--frc-deep-brown);
+    border-color: var(--frc-deep-brown);
+    color: white !important;
+}
+
+#paginationControlsDropdownMenu li .dropdown-item {
+    background-color: var(--frc-deep-brown);
+    border-color: var(--frc-deep-brown);
+    color: white !important;
 }

@@ -2946,7 +2946,7 @@
 
   "item.page.subject": "Keywords",
 
-  "item.page.uri": "URI",
+  "item.page.uri": "URL",
 
   "item.page.bitstreams.view-more": "Show more",
 
@@ -7346,7 +7346,7 @@
 
   "item.page.stats.country": "Country",
 
-  "item.page.referencedbyDuke": "Referenced By Duke",
+  "item.page.referencedbyDuke": "Source",
 
   "search.filters.filter.coverage.head": "Coverage",
 
@@ -7378,13 +7378,15 @@
 
   "browse.comcol.by.dateaccessioned": "By Accessioned Date",
 
-  "item.page.referencedbyGoogle": "Referenced By Google",
+  "item.page.referencedbyGoogle": "Source",
 
-  "item.page.referencedbyHathi": "Referenced By Hathi",
+  "item.page.referencedbyHathi": "Source",
 
-  "item.page.referencedbyGale": "Referenced By Gale",
+  "item.page.referencedbyGale": "Source",
 
-  "item.page.referencedbyAvalon": "Referenced By Avalon",
+  "item.page.referencedbyAvalon": "Source",
 
-  "item.page.referencedbyDelaware": "Referenced By Delaware",
+  "item.page.referencedbyDelaware": "Source",
+
+  "submission.sections.submit.progressbar.describe.frcSources": "FRC Sources",
 }

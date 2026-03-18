@@ -1,11 +1,12 @@
 {
-  "item.page.referencedby": "Referenced By",
-  "item.page.referencedbyDuke": "Referenced By Duke",
-  "item.page.referencedbyGoogle": "Referenced By Google",
-  "item.page.referencedbyHathi": "Referenced By Hathi",
-  "item.page.referencedbyGale": "Referenced By Gale",
-  "item.page.referencedbyAvalon": "Referenced By Avalon",
-  "item.page.referencedbyDelaware": "Referenced By Delaware",
+  "item.page.referencedby": "Source",
+  "item.page.referencedbyDuke": "Source",
+  "item.page.referencedbyGoogle": "Source",
+  "item.page.referencedbyHathi": "Source",
+  "item.page.referencedbyGale": "Source",
+  "item.page.referencedbyAvalon": "Source",
+  "item.page.referencedbyDelaware": "Source",
+  "item.page.uri": "URL",
 
   "search.filters.filter.coverage.head": "Coverage",
   "search.filters.filter.coverage.placeholder": "Coverage",
@@ -2970,8 +2971,6 @@
   "item.page.relationships.isOrgUnitOfProject": "Research Projects",
 
   "item.page.subject": "Keywords",
-
-  "item.page.uri": "URI",
 
   "item.page.bitstreams.view-more": "Show more",
 
