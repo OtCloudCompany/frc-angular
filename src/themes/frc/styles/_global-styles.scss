@@ -35,6 +35,20 @@
     color: white !important;
 }
 
+.btn-danger {
+    color: white !important;
+}
+
+.btn:disabled,
+.btn.disabled,
+fieldset:disabled .btn {
+    color: white !important;
+    background-color: var(--frc-yellow);
+    border-color: var(--frc-yellow);
+    opacity: var(--bs-btn-disabled-opacity);
+    box-shadow: none;
+}
+
 .bg-secondary {
     background-color: var(--frc-deep-brown) !important;
 }
@@ -62,7 +76,7 @@ a {
     background-color: var(--frc-deep-brown) !important;
 
     a {
-        color: white;
+        color: white !important;
     }
 
     .btn,
@@ -76,14 +90,6 @@ a {
 
 div#header-navbar-wrapper {
     border-bottom: none !important;
-}
-
-header .dropdown-menu a {
-    color: white !important;
-
-    #user-menu-dropdown li a {
-        color: #fff !important;
-    }
 }
 
 header .dropdown-menu .text-muted,
@@ -142,6 +148,7 @@ fieldset:disabled .btn {
     background-color: var(--frc-light-brown) !important;
 }
 
+
 .dso-edit-menu .dropdown-toggle {
     color: #fff !important;
 }
@@ -197,7 +204,7 @@ fieldset:disabled .btn {
     }
 
     nav .nav-link {
-        color: var(--frc-deep-brown) !important;
+        color: var(--frc-light-brown) !important;
     }
 
     nav .nav-link:hover {
@@ -205,6 +212,7 @@ fieldset:disabled .btn {
         border-left: 4px solid var(--frc-deep-brown);
     }
 }
+
 
 li div div div .item-list-title {
     color: var(--frc-light-brown) !important;
@@ -246,4 +254,60 @@ nav.comcol-browse .list-group-item.active {
     background-color: var(--frc-deep-brown);
     border-color: var(--frc-deep-brown);
     color: white !important;
+}
+
+header .dropdown-menu a {
+    color: white !important;
+
+    #user-menu-dropdown li a {
+        color: #fff !important;
+    }
+
+    ul.user-menu.user-menu-dropdown .ds-menu-item-wrapper a.ds-menu-item:hover {
+        background-color: var(--frc-light-brown) !important;
+    }
+
+    ul.user-menu.user-menu-dropdown .ds-menu-item-wrapper a.ds-menu-item:hover {
+        background-color: var(--frc-light-brown);
+    }
+}
+
+ds-metadata-field-selector .dropdown-list .dropdown-item {
+    color: white !important;
+}
+
+#admin-sidebar a {
+    color: white !important;
+}
+
+ds-search-label .bg-primary {
+    background-color: var(--frc-deep-brown) !important;
+    color: white !important;
+}
+
+ds-rss .btn-secondary i {
+    color: white !important;
+}
+
+ds-themed-collection-dropdown .collection-item .text-secondary,
+ds-themed-collection-dropdown .collection-item .text-primary {
+    color: white !important;
+}
+
+#language-menu-list {
+
+    // .dropdown-item.active,
+    // .dropdown-item:active {
+    //     color: white !important;
+    // }
+
+    .dropdown-item {
+        color: white !important;
+    }
+}
+
+ds-themed-login-page {
+    .dropdown-item:hover {
+        background-color: transparent !important;
+    }
 }

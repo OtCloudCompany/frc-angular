@@ -29,6 +29,8 @@ import { ItemPageNavbarComponent } from 'src/themes/frc/app/custom-apps/item-pag
 import { FrcAbstractFieldComponent } from 'src/themes/frc/app/custom-apps/frc-abstract-field/frc-abstract-field.component';
 import { UsageMetricsComponent } from 'src/themes/frc/app/custom-apps/usage-metrics/usage-metrics.component';
 import { UsageStatisticsComponent } from 'src/themes/frc/app/custom-apps/usage-statistics/usage-statistics.component';
+import { FrcSummaryComponent } from 'src/themes/frc/app/custom-apps/frc-summary/frc-summary.component';
+import { FrcLawTextComponent } from 'src/themes/frc/app/custom-apps/frc-law-text/frc-law-text.component';
 
 @listableObjectComponent(Item, ViewMode.StandalonePage, Context.Any, 'frc')
 @Component({
@@ -61,6 +63,8 @@ import { UsageStatisticsComponent } from 'src/themes/frc/app/custom-apps/usage-s
     FrcAbstractFieldComponent,
     UsageMetricsComponent,
     UsageStatisticsComponent,
+    FrcSummaryComponent,
+    FrcLawTextComponent,
   ],
 })
 export class UntypedItemComponent extends BaseComponent {
