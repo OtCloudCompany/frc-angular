@@ -296,11 +296,6 @@ ds-themed-collection-dropdown .collection-item .text-primary {
 
 #language-menu-list {
 
-    // .dropdown-item.active,
-    // .dropdown-item:active {
-    //     color: white !important;
-    // }
-
     .dropdown-item {
         color: white !important;
     }
@@ -310,4 +305,25 @@ ds-themed-login-page {
     .dropdown-item:hover {
         background-color: transparent !important;
     }
+}
+
+.ccLicense-select .dropdown-menu {
+    background-color: white !important;
+}
+
+input.tag-input,
+input#dc_subject {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid #000;
+    border-radius: var(--bs-border-radius);
+    box-shadow: var(--bs-box-shadow-inset);
 }
