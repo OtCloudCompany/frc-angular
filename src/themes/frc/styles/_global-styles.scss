@@ -29,6 +29,11 @@
     background-color: var(--frc-deep-brown) !important;
 }
 
+ds-chips .bg-info,
+ds-chips .text-muted {
+    color: white !important;
+}
+
 .btn-primary {
     background-color: var(--frc-light-brown) !important;
     border-color: var(--frc-light-brown) !important;
@@ -86,6 +91,10 @@ a {
         background-color: var(--frc-yellow) !important;
         border-color: var(--frc-yellow) !important;
     }
+}
+
+.dropdown-menu button.dropdown-item {
+    color: white !important;
 }
 
 div#header-navbar-wrapper {
@@ -308,7 +317,7 @@ ds-themed-login-page {
 }
 
 .ccLicense-select .dropdown-menu {
-    background-color: white !important;
+    // background-color: white !important;
 }
 
 input.tag-input,
