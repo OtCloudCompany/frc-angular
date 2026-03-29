@@ -1,10 +1,11 @@
 @if (object.firstMetadataValue('dc.description.lawtext'); as lawtext) {
 <div class="simple-view-element">
     <ds-truncatable [showToggle]="true" [id]="'lawtextOuter'">
-        <h5 class="simple-view-element-header">LawText</h5>
-        <div class="justify-content-end mb-4 itempage-abstract">
+        <h5 class="simple-view-element-header">{{ "item.page.lawtext" | translate }}</h5>
+        <div class="justify-content-between mb-4 itempage-abstract">
             <ds-truncatable-part [minLines]="4" [id]="'lawtextOuter'">
-                {{ lawtext | stripLineBreaks }}
+                {{ lawtext }}
+                <!-- <span class="dont-break-out">{{ lawtext }}</span> -->
             </ds-truncatable-part>
         </div>
     </ds-truncatable>

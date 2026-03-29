@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { TruncatableComponent } from 'src/app/shared/truncatable/truncatable.component';
 import { TruncatablePartComponent } from 'src/app/shared/truncatable/truncatable-part/truncatable-part.component';
-import { StripLineBreaksPipe } from '../strip-line-breaks.pipe';
 import { Item } from 'src/app/core/shared/item.model';
 
 @Component({
@@ -13,7 +12,6 @@ import { Item } from 'src/app/core/shared/item.model';
     TranslateModule,
     TruncatableComponent,
     TruncatablePartComponent,
-    StripLineBreaksPipe
   ],
   templateUrl: './frc-summary.component.html',
   styleUrl: './frc-summary.component.scss',

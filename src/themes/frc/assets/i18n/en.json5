@@ -23,6 +23,19 @@
   "browse.comcol.by.coverage": "By Coverage",
   "browse.comcol.by.dateaccessioned": "By Accessioned Date",
 
+  "item.page.supplemented": "Supplemented By",
+  "item.page.coverage": "Coverage",
+  "item.page.lawtext": "Law Text",
+
+  "item.page.country": "Country",
+  "item.page.city": "City",
+  "item.page.views": "Views",
+  "item.page.usageStatistics": "Usage Statistics",
+  "item.page.visitsByMonth": "Visits by Month",
+  "item.page.topCountries": "Top 10 Countries",
+  "item.page.topCities": "Top 10 Cities",
+  "item.page.stats.country": "Country",
+
   "vocabulary-treeview.tree.description.usjurisdictions": "US Jurisdictions",
 
   "dso-selector.set-scope.community.button": "Search entire repository",
@@ -6633,19 +6646,6 @@
   "item.page.review": "Review",
 
   "item.page.referenced": "Source",
-
-  "item.page.supplemented": "Supplemented By",
-  "item.page.coverage": "Coverage",
-
-  "item.page.country": "Country",
-  "item.page.city": "City",
-  "item.page.views": "Views",
-  "item.page.usageStatistics": "Usage Statistics",
-  "item.page.visitsByMonth": "Visits by Month",
-  "item.page.topCountries": "Top 10 Countries",
-  "item.page.topCities": "Top 10 Cities",
-  "item.page.stats.country": "Country",
-
 
   "menu.section.icon.ldn_services": "LDN Services overview",
 

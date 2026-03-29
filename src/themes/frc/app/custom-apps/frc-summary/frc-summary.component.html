@@ -2,9 +2,9 @@
 <div class="simple-view-element">
     <ds-truncatable [showToggle]="true" [id]="'summaryOuter'">
         <h5 class="simple-view-element-header">Summary</h5>
-        <div class="justify-content-end mb-4 itempage-abstract">
+        <div class="justify-content-between mb-4 itempage-abstract">
             <ds-truncatable-part [minLines]="4" [id]="'summaryOuter'">
-                {{ summary | stripLineBreaks }}
+                <span class="justify-content-between">{{ summary }}</span>
             </ds-truncatable-part>
         </div>
     </ds-truncatable>
