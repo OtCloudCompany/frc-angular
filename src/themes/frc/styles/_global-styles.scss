@@ -3,10 +3,24 @@
 // imports the base global style
 @import '../../../styles/_global-styles.scss';
 
+@font-face {
+    font-family: "Montserrat" !important;
+    src: url("/assets/frc/fonts/subset-Montserrat-Light.woff2") format("woff2"), url("/assets/frc/fonts/subset-Montserrat-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --frc-deep-brown: #492f24;
     --frc-light-brown: #9A651E;
     --frc-yellow: #ffc425;
+}
+
+body {
+    font-family: "Montserrat", Arial, sans-serif !important;
+    font-weight: 300 !important;
+    font-size: 16px !important;
 }
 
 .bg-frc-light-brown {
