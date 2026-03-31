@@ -77,14 +77,17 @@
 
         <ds-item-page-date-field [item]="object"></ds-item-page-date-field>
 
-        @if (object.firstMetadataValue('dc.coverage.spatial'); as coverage) {
-        <div class="simple-view-element">
+        <!-- @if (object.firstMetadataValue('dc.coverage.spatial'); as coverage) { -->
+        <!-- <div class="simple-view-element">
             <h5 class="simple-view-element-header">{{"item.page.coverage" | translate}}</h5>
             <div class="justify-content-between mb-4">
                 {{ coverage }}
             </div>
-        </div>
-        }
+        </div> -->
+        <!-- } -->
+        <ds-generic-item-page-field [item]="object" [fields]="['dc.coverage.spatial']" [separator]="', '"
+            [label]="'item.page.coverage'">
+        </ds-generic-item-page-field>
 
         <ds-metadata-representation-list class="ds-item-page-mixed-author-field" [parentItem]="object"
             [itemType]="'Person'" [metadataFields]="['dc.contributor.author', 'dc.creator']"
