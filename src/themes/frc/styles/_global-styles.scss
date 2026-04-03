@@ -105,10 +105,18 @@ a {
         background-color: var(--frc-yellow) !important;
         border-color: var(--frc-yellow) !important;
     }
-}
 
-.dropdown-menu button.dropdown-item {
-    color: white !important;
+    button.dropdown-item {
+        color: white !important;
+    }
+
+    ds-loading label.form-label {
+        color: white !important;
+    }
+
+    ds-loading .loader span {
+        background-color: white !important;
+    }
 }
 
 div#header-navbar-wrapper {
@@ -257,8 +265,8 @@ ds-truncatable-part .btn-link {
 .page-link.active,
 .active>.page-link {
     color: white !important;
-    background-color: var(--frc-deep-brown);
-    border-color: var(--frc-deep-brown);
+    background-color: var(--frc-light-brown);
+    border-color: var(--frc-light-brown);
 }
 
 nav.comcol-browse .list-group-item.active {
@@ -324,16 +332,6 @@ ds-themed-collection-dropdown .collection-item .text-primary {
     }
 }
 
-ds-themed-login-page {
-    .dropdown-item:hover {
-        background-color: transparent !important;
-    }
-}
-
-.ccLicense-select .dropdown-menu {
-    // background-color: white !important;
-}
-
 input.tag-input,
 input#dc_subject {
     display: block;
@@ -351,7 +349,14 @@ input#dc_subject {
     box-shadow: var(--bs-box-shadow-inset);
 }
 
-// .itempage-abstract .dont-break-out {
-//     white-space: pre-wrap !important;
-//     word-wrap: break-word !important;
-// }
+ds-themed-login-page {
+    .dropdown-item:hover {
+        background-color: transparent !important;
+    }
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: white !important;
+    background-color: var(--frc-light-brown) !important;
+}

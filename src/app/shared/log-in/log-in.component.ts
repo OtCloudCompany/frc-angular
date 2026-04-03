@@ -73,8 +73,8 @@ export class LogInComponent implements OnInit {
   public loading: Observable<boolean>;
 
   constructor(private store: Store<CoreState>,
-              private authService: AuthService,
-              private authMethodsService: AuthMethodsService,
+    private authService: AuthService,
+    private authMethodsService: AuthMethodsService,
   ) {
   }
 
