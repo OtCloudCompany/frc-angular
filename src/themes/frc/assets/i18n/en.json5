@@ -8,25 +8,28 @@
   "item.page.referencedbyDelaware": "Source",
   "item.page.uri": "URL",
 
-  "search.filters.filter.coverage.head": "Coverage",
-  "search.filters.filter.coverage.placeholder": "Coverage",
-  "search.filters.filter.coverage.label": "Search Coverage",
-  "search.filters.applied.f.coverage": "Coverage",
-  "menu.section.browse_global_by_coverage": "By Coverage",
-  "browse.metadata.coverage": "Coverage",
-  "browse.metadata.coverage.breadcrumbs": "Browse by Coverage",
+  "search.filters.filter.coverage.head": "Jurisdiction",
+  "search.filters.filter.coverage.placeholder": "Jurisdiction",
+  "search.filters.filter.coverage.label": "Search Jurisdiction",
+  "search.filters.applied.f.coverage": "Jurisdiction",
+  "menu.section.browse_global_by_coverage": "By Jurisdiction",
+  "browse.metadata.coverage": "Jurisdiction",
+  "browse.metadata.coverage.breadcrumbs": "Browse by Jurisdiction",
 
   "browse.metadata.dateaccessioned": "Accessioned Date",
   "browse.metadata.dateaccessioned.breadcrumbs": "Browse by Accessioned Date",
   "menu.section.browse_global_by_dateaccessioned": "By Accessioned Date",
+  "browse.metadata.title.breadcrumbs": "Browse by Citation",
+  "browse.comcol.by.title": "By Citation",
+  "menu.section.browse_community_by_title": "By Citation",
+  "menu.section.browse_global_by_title": "By Citation",
 
-  "browse.comcol.by.coverage": "By Coverage",
+  "browse.comcol.by.coverage": "By Jurisdiction",
   "browse.comcol.by.dateaccessioned": "By Accessioned Date",
 
   "item.page.supplemented": "Supplemented By",
-  "item.page.coverage": "Coverage",
+  "item.page.coverage": "Jurisdiction",
   "item.page.lawtext": "Law Text",
-
   "item.page.country": "Country",
   "item.page.city": "City",
   "item.page.views": "Views",
@@ -35,8 +38,15 @@
   "item.page.topCountries": "Top 10 Countries",
   "item.page.topCities": "Top 10 Cities",
   "item.page.stats.country": "Country",
+  "item.page.subject": "Subjects",
 
   "vocabulary-treeview.tree.description.jurisdictions": "FRC Jurisdictions",
+  "menu.section.browse_global_communities_and_collections": "Explore Collections",
+  "community.subcoms-cols.breadcrumbs": "Collections",
+  "community.all-lists.head": "Collections",
+  "community.sub-collection-list.head": "Explore Content Collections",
+  "nav.browse.header": "All of DSpace",
+  "menu.section.browse_global": "Browse Repository",
 
   "dso-selector.set-scope.community.button": "Search entire repository",
 
@@ -1070,8 +1080,6 @@
 
   "browse.comcol.by.nsi": "By Norwegian Science Index",
 
-  "browse.comcol.by.title": "By Title",
-
   "browse.comcol.head": "Browse",
 
   "browse.empty": "No items to show.",
@@ -1098,8 +1106,6 @@
   "browse.metadata.nsi.breadcrumbs": "Browse by Norwegian Science Index",
 
   "browse.metadata.nsi.tree.description": "Select an index to add as search filter",
-
-  "browse.metadata.title.breadcrumbs": "Browse by Title",
 
   "browse.metadata.map": "Browse by Geolocation",
 
@@ -1473,8 +1479,6 @@
 
   "community.browse.logo": "Browse for a community logo",
 
-  "community.subcoms-cols.breadcrumbs": "Subcommunities and Collections",
-
   "community.create.breadcrumbs": "Create Community",
 
   "community.create.head": "Create a Community",
@@ -1641,13 +1645,9 @@
 
   "community.page.options": "Options",
 
-  "community.all-lists.head": "Subcommunities and Collections",
-
   "community.search.breadcrumbs": "Search",
 
   "community.search.results.head": "Search Results",
-
-  "community.sub-collection-list.head": "Collections in this community",
 
   "community.sub-community-list.head": "Communities in this Community",
 
@@ -2983,8 +2983,6 @@
 
   "item.page.relationships.isOrgUnitOfProject": "Research Projects",
 
-  "item.page.subject": "Keywords",
-
   "item.page.bitstreams.view-more": "Show more",
 
   "item.page.bitstreams.collapse": "Collapse",
@@ -3491,10 +3489,6 @@
 
   "menu.section.browse_community_by_issue_date": "By Issue Date",
 
-  "menu.section.browse_community_by_title": "By Title",
-
-  "menu.section.browse_global": "All of DSpace",
-
   "menu.section.browse_global_by_author": "By Author",
 
   "menu.section.browse_global_by_dateissued": "By Issue Date",
@@ -3504,10 +3498,6 @@
   "menu.section.browse_global_by_srsc": "By Subject Category",
 
   "menu.section.browse_global_by_nsi": "By Norwegian Science Index",
-
-  "menu.section.browse_global_by_title": "By Title",
-
-  "menu.section.browse_global_communities_and_collections": "Communities & Collections",
 
   "menu.section.browse_global_geospatial_map": "By Geolocation (Map)",
 
@@ -3728,8 +3718,6 @@
   "notification.suggestion.review": "review the suggestions",
 
   "notification.suggestion.please": "Please",
-
-  "nav.browse.header": "All of DSpace",
 
   "nav.community-browse.header": "By Community",
 

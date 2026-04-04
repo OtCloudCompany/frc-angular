@@ -31,6 +31,7 @@ import { UsageMetricsComponent } from 'src/themes/frc/app/custom-apps/usage-metr
 import { UsageStatisticsComponent } from 'src/themes/frc/app/custom-apps/usage-statistics/usage-statistics.component';
 import { FrcSummaryComponent } from 'src/themes/frc/app/custom-apps/frc-summary/frc-summary.component';
 import { FrcLawTextComponent } from 'src/themes/frc/app/custom-apps/frc-law-text/frc-law-text.component';
+import { MetadataValuesComponent } from '../../../../../../../app/item-page/field-components/metadata-values/metadata-values.component';
 
 @listableObjectComponent(Item, ViewMode.StandalonePage, Context.Any, 'frc')
 @Component({
@@ -65,6 +66,7 @@ import { FrcLawTextComponent } from 'src/themes/frc/app/custom-apps/frc-law-text
     UsageStatisticsComponent,
     FrcSummaryComponent,
     FrcLawTextComponent,
+    MetadataValuesComponent
   ],
 })
 export class UntypedItemComponent extends BaseComponent {

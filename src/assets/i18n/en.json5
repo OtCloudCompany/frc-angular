@@ -1030,7 +1030,7 @@
 
   "browse.comcol.by.nsi": "By Norwegian Science Index",
 
-  "browse.comcol.by.title": "By Title",
+  "browse.comcol.by.title": "By Citation",
 
   "browse.comcol.head": "Browse",
 
@@ -1060,7 +1060,7 @@
 
   "browse.metadata.nsi.tree.description": "Select an index to add as search filter",
 
-  "browse.metadata.title.breadcrumbs": "Browse by Title",
+  "browse.metadata.title.breadcrumbs": "Browse by Citation",
 
   "browse.metadata.map": "Browse by Geolocation",
 
@@ -1434,7 +1434,7 @@
 
   "community.browse.logo": "Browse for a community logo",
 
-  "community.subcoms-cols.breadcrumbs": "Subcommunities and Collections",
+  "community.subcoms-cols.breadcrumbs": "Collections",
 
   "community.create.breadcrumbs": "Create Community",
 
@@ -1602,13 +1602,13 @@
 
   "community.page.options": "Options",
 
-  "community.all-lists.head": "Subcommunities and Collections",
+  "community.all-lists.head": "Collections",
 
   "community.search.breadcrumbs": "Search",
 
   "community.search.results.head": "Search Results",
 
-  "community.sub-collection-list.head": "Collections in this community",
+  "community.sub-collection-list.head": "Explore Content Collections",
 
   "community.sub-community-list.head": "Communities in this Community",
 
@@ -2944,7 +2944,7 @@
 
   "item.page.relationships.isOrgUnitOfProject": "Research Projects",
 
-  "item.page.subject": "Keywords",
+  "item.page.subject": "Subjects",
 
   "item.page.uri": "URL",
 
@@ -3450,9 +3450,9 @@
 
   "menu.section.browse_community_by_issue_date": "By Issue Date",
 
-  "menu.section.browse_community_by_title": "By Title",
+  "menu.section.browse_community_by_title": "By Citation",
 
-  "menu.section.browse_global": "All of DSpace",
+  "menu.section.browse_global": "Browse Repository",
 
   "menu.section.browse_global_by_author": "By Author",
 
@@ -3464,9 +3464,9 @@
 
   "menu.section.browse_global_by_nsi": "By Norwegian Science Index",
 
-  "menu.section.browse_global_by_title": "By Title",
+  "menu.section.browse_global_by_title": "By Citation",
 
-  "menu.section.browse_global_communities_and_collections": "Communities & Collections",
+  "menu.section.browse_global_communities_and_collections": "Explore Collections",
 
   "menu.section.browse_global_geospatial_map": "By Geolocation (Map)",
 
@@ -7328,7 +7328,7 @@
 
   "item.page.referencedby": "Source",
 
-  "item.page.coverage": "Coverage",
+  "item.page.coverage": "Jurisdiction",
 
   "item.page.country": "Country",
 
@@ -7348,19 +7348,19 @@
 
   "item.page.referencedbyDuke": "Source",
 
-  "search.filters.filter.coverage.head": "Coverage",
+  "search.filters.filter.coverage.head": "Jurisdiction",
 
-  "search.filters.filter.coverage.placeholder": "Coverage",
+  "search.filters.filter.coverage.placeholder": "Jurisdiction",
 
-  "search.filters.filter.coverage.label": "Search Coverage",
+  "search.filters.filter.coverage.label": "Search Jurisdiction",
 
-  "search.filters.applied.f.coverage": "Coverage",
+  "search.filters.applied.f.coverage": "Jurisdiction",
 
   "menu.section.browse_community_by_coverage": "By Coverage",
 
-  "browse.metadata.coverage": "Coverage",
+  "browse.metadata.coverage": "Jurisdiction",
 
-  "browse.metadata.coverage.breadcrumbs": "Browse by Coverage",
+  "browse.metadata.coverage.breadcrumbs": "Browse by Jurisdiction",
 
   "browse.metadata.dateaccessioned": "Accessioned Date",
 
@@ -7370,11 +7370,11 @@
 
   "vocabulary-treeview.tree.description.usjurisdictions": "US Jurisdictions",
 
-  "menu.section.browse_global_by_coverage": "By Coverage",
+  "menu.section.browse_global_by_coverage": "By Jurisdiction",
 
   "menu.section.browse_global_by_dateaccessioned": "By Accessioned Date",
 
-  "browse.comcol.by.coverage": "By Coverage",
+  "browse.comcol.by.coverage": "By Jurisdiction",
 
   "browse.comcol.by.dateaccessioned": "By Accessioned Date",
 
