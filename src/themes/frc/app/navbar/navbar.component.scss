@@ -45,6 +45,12 @@
 
     #main-navbar ::ng-deep {
 
+        /* Hide the auto-generated Communities & Collections section.
+           CSS ensures it's hidden in SSR HTML before client hydration. */
+        #navbar-section-public_0_0 {
+            display: none !important;
+        }
+
         .ds-menu-item,
         .ds-menu-toggler-wrapper {
             white-space: nowrap;
