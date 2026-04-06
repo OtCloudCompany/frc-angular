@@ -360,3 +360,9 @@ ds-themed-login-page {
     color: white !important;
     background-color: var(--frc-light-brown) !important;
 }
+
+/* Hide the auto-generated Communities & Collections section.
+           CSS ensures it's hidden in SSR HTML before client hydration. */
+#navbar-section-public_0_0 {
+    display: none !important;
+}
