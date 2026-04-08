@@ -48,6 +48,9 @@
   "nav.browse.header": "All of DSpace",
   "menu.section.browse_global": "Browse Repository",
 
+  "submission.sections.submit.progressbar.describe.frcSources": "FRC Sources",
+  "submission.sections.submit.progressbar.describe.editorsNote": "Editor's Note",
+
   "dso-selector.set-scope.community.button": "Search entire repository",
 
   "401.help": "You're not authorized to access this page. You can use the button below to get back to the home page.",
@@ -5577,8 +5580,6 @@
   "submission.sections.submit.progressbar.describe.stepone": "Describe",
 
   "submission.sections.submit.progressbar.describe.steptwo": "Describe",
-
-  "submission.sections.submit.progressbar.describe.frcSources": "FRC Sources",
 
   "submission.sections.submit.progressbar.duplicates": "Potential duplicates",
 

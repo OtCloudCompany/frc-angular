@@ -7356,7 +7356,7 @@
 
   "search.filters.applied.f.coverage": "Jurisdiction",
 
-  "menu.section.browse_community_by_coverage": "By Coverage",
+  "menu.section.browse_community_by_coverage": "By Jurisdiction",
 
   "browse.metadata.coverage": "Jurisdiction",
 
@@ -7393,4 +7393,8 @@
   "item.page.lawtext": "Law Text",
 
   "vocabulary-treeview.tree.description.jurisdictions": "FRC Jurisdictions",
+
+  "submission.sections.submit.progressbar.describe.editorsNoteStep": "Editor's Note",
+
+  "submission.sections.submit.progressbar.describe.editorsNote": "Editor's Note",
 }
