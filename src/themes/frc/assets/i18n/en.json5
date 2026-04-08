@@ -26,6 +26,11 @@
 
   "browse.comcol.by.coverage": "By Jurisdiction",
   "browse.comcol.by.dateaccessioned": "By Accessioned Date",
+  "browse.comcol.by.subject": "By Category",
+  "browse.metadata.subject.breadcrumbs": "Browse by Category",
+  "menu.section.browse_global_by_subject": "By Category",
+  "item.page.subject": "Categories",
+  "browse.metadata.subject": "Category",
 
   "item.page.supplemented": "Supplemented By",
   "item.page.coverage": "Jurisdiction",
@@ -38,7 +43,6 @@
   "item.page.topCountries": "Top 10 Countries",
   "item.page.topCities": "Top 10 Cities",
   "item.page.stats.country": "Country",
-  "item.page.subject": "Subjects",
 
   "vocabulary-treeview.tree.description.jurisdictions": "FRC Jurisdictions",
   "menu.section.browse_global_communities_and_collections": "Explore Collections",
@@ -50,8 +54,28 @@
 
   "submission.sections.submit.progressbar.describe.frcSources": "FRC Sources",
   "submission.sections.submit.progressbar.describe.editorsNote": "Editor's Note",
-
   "dso-selector.set-scope.community.button": "Search entire repository",
+
+  "search.filters.filter.title.head": "Citation",
+  "search.filters.filter.title.placeholder": "Citation",
+  "search.filters.filter.title.label": "Search Citation",
+  "admin.reports.items.title": "Citation",
+  "browse.metadata.title": "Citation",
+  "item.preview.dc.subject": "Categories:",
+  "item.preview.dc.title": "Citation:",
+  "item.select.table.title": "Citation",
+  "search.filters.applied.f.title": "Citation",
+  "sorting.dc.title.ASC": "Citation Ascending",
+  "sorting.dc.title.DESC": "Citation Descending",
+  "submission.sections.sherpa.publication.information.title": "Citation",
+  "title-starts-with-pattern_condition.label": "Citation starts with pattern",
+  "search.filters.applied.f.subject": "Category",
+  "search.filters.filter.creativeWorkKeywords.head": "Category",
+  "search.filters.filter.creativeWorkKeywords.placeholder": "Category",
+  "search.filters.filter.creativeWorkKeywords.label": "Search category",  
+  "search.filters.filter.subject.head": "Category",
+  "search.filters.filter.subject.placeholder": "Category",
+  "search.filters.filter.subject.label": "Search category",  
 
   "401.help": "You're not authorized to access this page. You can use the button below to get back to the home page.",
 
@@ -701,8 +725,6 @@
 
   "admin.reports.items.handle": "URI",
 
-  "admin.reports.items.title": "Title",
-
   "admin.reports.commons.filters": "Filters",
 
   "admin.reports.commons.additional-data": "Additional data to return",
@@ -1077,8 +1099,6 @@
 
   "browse.comcol.by.dateissued": "By Issue Date",
 
-  "browse.comcol.by.subject": "By Subject",
-
   "browse.comcol.by.srsc": "By Subject Category",
 
   "browse.comcol.by.nsi": "By Norwegian Science Index",
@@ -1092,15 +1112,9 @@
 
   "browse.metadata.dateissued": "Issue Date",
 
-  "browse.metadata.subject": "Subject",
-
-  "browse.metadata.title": "Title",
-
   "browse.metadata.srsc": "Subject Category",
 
   "browse.metadata.dateissued.breadcrumbs": "Browse by Date",
-
-  "browse.metadata.subject.breadcrumbs": "Browse by Subject",
 
   "browse.metadata.srsc.breadcrumbs": "Browse by Subject Category",
 
@@ -3026,10 +3040,6 @@
 
   "item.preview.dc.language.iso": "Language:",
 
-  "item.preview.dc.subject": "Subjects:",
-
-  "item.preview.dc.title": "Title:",
-
   "item.preview.dc.type": "Type:",
 
   "item.preview.oaire.version": "Version",
@@ -3125,8 +3135,6 @@
   "item.select.table.author": "Author",
 
   "item.select.table.collection": "Collection",
-
-  "item.select.table.title": "Title",
 
   "item.version.history.empty": "There are no other versions for this item yet.",
 
@@ -3495,8 +3503,6 @@
   "menu.section.browse_global_by_author": "By Author",
 
   "menu.section.browse_global_by_dateissued": "By Issue Date",
-
-  "menu.section.browse_global_by_subject": "By Subject",
 
   "menu.section.browse_global_by_srsc": "By Subject Category",
 
@@ -4600,8 +4606,6 @@
 
   "search.filters.remove": "Remove filter of type {{ type }} with value {{ value }}",
 
-  "search.filters.applied.f.title": "Title",
-
   "search.filters.applied.f.author": "Author",
 
   "search.filters.applied.f.dateIssued.max": "End date",
@@ -4624,8 +4628,6 @@
   "search.filters.applied.f.itemtype": "Type",
 
   "search.filters.applied.f.namedresourcetype": "Status",
-
-  "search.filters.applied.f.subject": "Subject",
 
   "search.filters.applied.f.submitter": "Submitter",
 
@@ -4654,12 +4656,6 @@
   "search.filters.applied.operator.query": "",
 
   "search.filters.applied.f.point": "Coordinates",
-
-  "search.filters.filter.title.head": "Title",
-
-  "search.filters.filter.title.placeholder": "Title",
-
-  "search.filters.filter.title.label": "Search Title",
 
   "search.filters.filter.author.head": "Author",
 
@@ -4690,12 +4686,6 @@
   "search.filters.filter.creativeWorkEditor.placeholder": "Editor",
 
   "search.filters.filter.creativeWorkEditor.label": "Search editor",
-
-  "search.filters.filter.creativeWorkKeywords.head": "Subject",
-
-  "search.filters.filter.creativeWorkKeywords.placeholder": "Subject",
-
-  "search.filters.filter.creativeWorkKeywords.label": "Search subject",
 
   "search.filters.filter.creativeWorkPublisher.head": "Publisher",
 
@@ -4808,12 +4798,6 @@
   "search.filters.filter.show-less": "Collapse",
 
   "search.filters.filter.show-more": "Show more",
-
-  "search.filters.filter.subject.head": "Subject",
-
-  "search.filters.filter.subject.placeholder": "Subject",
-
-  "search.filters.filter.subject.label": "Search subject",
 
   "search.filters.filter.submitter.head": "Submitter",
 
@@ -4960,10 +4944,6 @@
   "sorting.ASC": "Ascending",
 
   "sorting.DESC": "Descending",
-
-  "sorting.dc.title.ASC": "Title Ascending",
-
-  "sorting.dc.title.DESC": "Title Descending",
 
   "sorting.score.ASC": "Least Relevant",
 
@@ -5728,8 +5708,6 @@
   "submission.sections.license.notgranted": "You must accept the license",
 
   "submission.sections.sherpa.publication.information": "Publication information",
-
-  "submission.sections.sherpa.publication.information.title": "Title",
 
   "submission.sections.sherpa.publication.information.issns": "ISSNs",
 
@@ -6758,8 +6736,6 @@
   "item-is-public_condition.label": "Item is public",
 
   "journals_ingest_suggestion_collection_filter_18.label": "Journals ingest",
-
-  "title-starts-with-pattern_condition.label": "Title starts with pattern",
 
   "type-equals-dataset_condition.label": "Type equals Dataset",
 

@@ -648,7 +648,7 @@
 
   "admin.reports.items.handle": "URI",
 
-  "admin.reports.items.title": "Title",
+  "admin.reports.items.title": "Citation",
 
   "admin.reports.commons.filters": "Filters",
 
@@ -1024,7 +1024,7 @@
 
   "browse.comcol.by.dateissued": "By Issue Date",
 
-  "browse.comcol.by.subject": "By Subject",
+  "browse.comcol.by.subject": "By Category",
 
   "browse.comcol.by.srsc": "By Subject Category",
 
@@ -1040,9 +1040,9 @@
 
   "browse.metadata.dateissued": "Issue Date",
 
-  "browse.metadata.subject": "Subject",
+  "browse.metadata.subject": "Category",
 
-  "browse.metadata.title": "Title",
+  "browse.metadata.title": "Citation",
 
   "browse.metadata.srsc": "Subject Category",
 
@@ -1050,7 +1050,7 @@
 
   "browse.metadata.dateissued.breadcrumbs": "Browse by Date",
 
-  "browse.metadata.subject.breadcrumbs": "Browse by Subject",
+  "browse.metadata.subject.breadcrumbs": "Browse by Category",
 
   "browse.metadata.srsc.breadcrumbs": "Browse by Subject Category",
 
@@ -2944,7 +2944,7 @@
 
   "item.page.relationships.isOrgUnitOfProject": "Research Projects",
 
-  "item.page.subject": "Subjects",
+  "item.page.subject": "Categories",
 
   "item.page.uri": "URL",
 
@@ -2988,9 +2988,9 @@
 
   "item.preview.dc.language.iso": "Language:",
 
-  "item.preview.dc.subject": "Subjects:",
+  "item.preview.dc.subject": "Categories:",
 
-  "item.preview.dc.title": "Title:",
+  "item.preview.dc.title": "Citation:",
 
   "item.preview.dc.type": "Type:",
 
@@ -3084,7 +3084,7 @@
 
   "item.select.table.collection": "Collection",
 
-  "item.select.table.title": "Title",
+  "item.select.table.title": "Citation",
 
   "item.version.history.empty": "There are no other versions for this item yet.",
 
@@ -3458,7 +3458,7 @@
 
   "menu.section.browse_global_by_dateissued": "By Issue Date",
 
-  "menu.section.browse_global_by_subject": "By Subject",
+  "menu.section.browse_global_by_subject": "By Category",
 
   "menu.section.browse_global_by_srsc": "By Subject Category",
 
@@ -4568,7 +4568,7 @@
 
   "search.filters.remove": "Remove filter of type {{ type }} with value {{ value }}",
 
-  "search.filters.applied.f.title": "Title",
+  "search.filters.applied.f.title": "Citation",
 
   "search.filters.applied.f.author": "Author",
 
@@ -4594,7 +4594,7 @@
 
   "search.filters.applied.f.namedresourcetype": "Status",
 
-  "search.filters.applied.f.subject": "Subject",
+  "search.filters.applied.f.subject": "Category",
 
   "search.filters.applied.f.submitter": "Submitter",
 
@@ -4624,11 +4624,11 @@
 
   "search.filters.applied.f.point": "Coordinates",
 
-  "search.filters.filter.title.head": "Title",
+  "search.filters.filter.title.head": "Citation",
 
-  "search.filters.filter.title.placeholder": "Title",
+  "search.filters.filter.title.placeholder": "Citation",
 
-  "search.filters.filter.title.label": "Search Title",
+  "search.filters.filter.title.label": "Search Citation",
 
   "search.filters.filter.author.head": "Author",
 
@@ -4660,11 +4660,11 @@
 
   "search.filters.filter.creativeWorkEditor.label": "Search editor",
 
-  "search.filters.filter.creativeWorkKeywords.head": "Subject",
+  "search.filters.filter.creativeWorkKeywords.head": "Category",
 
-  "search.filters.filter.creativeWorkKeywords.placeholder": "Subject",
+  "search.filters.filter.creativeWorkKeywords.placeholder": "Category",
 
-  "search.filters.filter.creativeWorkKeywords.label": "Search subject",
+  "search.filters.filter.creativeWorkKeywords.label": "Search category",
 
   "search.filters.filter.creativeWorkPublisher.head": "Publisher",
 
@@ -4778,11 +4778,11 @@
 
   "search.filters.filter.show-more": "Show more",
 
-  "search.filters.filter.subject.head": "Subject",
+  "search.filters.filter.subject.head": "Category",
 
-  "search.filters.filter.subject.placeholder": "Subject",
+  "search.filters.filter.subject.placeholder": "Category",
 
-  "search.filters.filter.subject.label": "Search subject",
+  "search.filters.filter.subject.label": "Search category",
 
   "search.filters.filter.submitter.head": "Submitter",
 
@@ -4930,9 +4930,9 @@
 
   "sorting.DESC": "Descending",
 
-  "sorting.dc.title.ASC": "Title Ascending",
+  "sorting.dc.title.ASC": "Citation Ascending",
 
-  "sorting.dc.title.DESC": "Title Descending",
+  "sorting.dc.title.DESC": "Citation Descending",
 
   "sorting.score.ASC": "Least Relevant",
 
@@ -5698,7 +5698,7 @@
 
   "submission.sections.sherpa.publication.information": "Publication information",
 
-  "submission.sections.sherpa.publication.information.title": "Title",
+  "submission.sections.sherpa.publication.information.title": "Citation",
 
   "submission.sections.sherpa.publication.information.issns": "ISSNs",
 
@@ -6842,7 +6842,7 @@
 
   "journals_ingest_suggestion_collection_filter_18.label": "Journals ingest",
 
-  "title-starts-with-pattern_condition.label": "Title starts with pattern",
+  "title-starts-with-pattern_condition.label": "Citation starts with pattern",
 
   "type-equals-dataset_condition.label": "Type equals Dataset",
 
