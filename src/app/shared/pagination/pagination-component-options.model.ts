@@ -27,6 +27,6 @@ export class PaginationComponentOptions extends NgbPaginationConfig {
   /**
    * Number of items per page.
    */
-  pageSize: number;
+  pageSize: number = 100;
 
 }
