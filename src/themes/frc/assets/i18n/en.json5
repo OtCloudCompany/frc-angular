@@ -6,7 +6,6 @@
   "item.page.referencedbyGale": "Source",
   "item.page.referencedbyAvalon": "Source",
   "item.page.referencedbyDelaware": "Source",
-  "item.page.uri": "URL",
 
   "search.filters.filter.coverage.head": "Jurisdiction",
   "search.filters.filter.coverage.placeholder": "Jurisdiction",
@@ -75,7 +74,15 @@
   "search.filters.filter.creativeWorkKeywords.label": "Search category",  
   "search.filters.filter.subject.head": "Category",
   "search.filters.filter.subject.placeholder": "Category",
-  "search.filters.filter.subject.label": "Search category",  
+  "search.filters.filter.subject.label": "Search category",
+
+  "item.page.uri": "URL",
+  "admin.reports.items.handle": "URL",
+  "submission.sections.sherpa.record.information.uri": "URL",
+  "dc-identifier-uri-contains-doi_condition.label": "URL contains DOI",
+  "community.page.handle": "Permanent URL for this community",
+  "collection.page.handle": "Permanent URL for this collection",
+  "mydspace.results.no-uri": "No URL",
 
   "401.help": "You're not authorized to access this page. You can use the button below to get back to the home page.",
 
@@ -722,8 +729,6 @@
   "admin.reports.items.id": "UUID",
 
   "admin.reports.items.collection": "Collection",
-
-  "admin.reports.items.handle": "URI",
 
   "admin.reports.commons.filters": "Filters",
 
@@ -1408,8 +1413,6 @@
 
   "collection.page.edit": "Edit this collection",
 
-  "collection.page.handle": "Permanent URI for this collection",
-
   "collection.page.license": "License",
 
   "collection.page.news": "News",
@@ -1653,8 +1656,6 @@
   "community.form.title": "Name",
 
   "community.page.edit": "Edit this community",
-
-  "community.page.handle": "Permanent URI for this community",
 
   "community.page.license": "License",
 
@@ -3685,8 +3686,6 @@
   "mydspace.results.no-results": "There were no items to show",
 
   "mydspace.results.no-title": "No title",
-
-  "mydspace.results.no-uri": "No URI",
 
   "mydspace.search-form.placeholder": "Search in MyDSpace...",
 
@@ -5753,8 +5752,6 @@
 
   "submission.sections.sherpa.record.information.date.modified": "Last Modified",
 
-  "submission.sections.sherpa.record.information.uri": "URI",
-
   "submission.sections.sherpa.error.message": "There was an error retrieving sherpa informations",
 
   "submission.submit.breadcrumbs": "New submission",
@@ -6716,8 +6713,6 @@
   "always_true_filter.label": "Always true",
 
   "automatic_processing_collection_filter_16.label": "Automatic processing",
-
-  "dc-identifier-uri-contains-doi_condition.label": "URI contains DOI",
 
   "doi-filter.label": "DOI filter",
 

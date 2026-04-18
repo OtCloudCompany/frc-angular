@@ -146,6 +146,5 @@ export class RecentItemListComponent implements OnInit, OnDestroy {
     }
     return this._placeholderFontClass;
   }
-
 }
 
