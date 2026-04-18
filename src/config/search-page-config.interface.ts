@@ -15,4 +15,5 @@ export interface SearchConfig extends Config {
      * For instance if we set 5 then 5 loading skeletons will be visualized before the actual filters are retrieved.
      */
     filterPlaceholdersCount?: number;
+    pageSize?: number;
 }

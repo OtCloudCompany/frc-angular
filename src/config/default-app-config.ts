@@ -512,8 +512,8 @@ export class DefaultAppConfig implements AppConfig {
 
   // Configuration that determines the metadata sorting of community and collection edition and creation when there are not a search query.
   comcolSelectionSort: DiscoverySortConfig = {
-    sortField:'dc.title',
-    sortDirection:'ASC',
+    sortField: 'dc.title',
+    sortDirection: 'ASC',
   };
 
   qualityAssuranceConfig: QualityAssuranceConfig = {
@@ -523,13 +523,13 @@ export class DefaultAppConfig implements AppConfig {
     pageSize: 5,
   };
 
-
   search: SearchConfig = {
     advancedFilters: {
       enabled: false,
       filter: ['title', 'author', 'subject', 'entityType'],
     },
     filterPlaceholdersCount: 5,
+    pageSize: 10
   };
 
   notifyMetrics: AdminNotifyMetricsRow[] = [
