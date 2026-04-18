@@ -646,7 +646,7 @@
 
   "admin.reports.items.collection": "Collection",
 
-  "admin.reports.items.handle": "URI",
+  "admin.reports.items.handle": "URL",
 
   "admin.reports.items.title": "Citation",
 
@@ -1346,7 +1346,7 @@
 
   "collection.page.edit": "Edit this collection",
 
-  "collection.page.handle": "Permanent URI for this collection",
+  "collection.page.handle": "Permanent URL for this collection",
 
   "collection.page.license": "License",
 
@@ -1594,7 +1594,7 @@
 
   "community.page.edit": "Edit this community",
 
-  "community.page.handle": "Permanent URI for this community",
+  "community.page.handle": "Permanent URL for this community",
 
   "community.page.license": "License",
 
@@ -3646,7 +3646,7 @@
 
   "mydspace.results.no-title": "No title",
 
-  "mydspace.results.no-uri": "No URI",
+  "mydspace.results.no-uri": "No URL",
 
   "mydspace.search-form.placeholder": "Search in MyDSpace...",
 
@@ -5744,7 +5744,7 @@
 
   "submission.sections.sherpa.record.information.date.modified": "Last Modified",
 
-  "submission.sections.sherpa.record.information.uri": "URI",
+  "submission.sections.sherpa.record.information.uri": "URL",
 
   "submission.sections.sherpa.error.message": "There was an error retrieving sherpa informations",
 
@@ -6822,7 +6822,7 @@
 
   "automatic_processing_collection_filter_16.label": "Automatic processing",
 
-  "dc-identifier-uri-contains-doi_condition.label": "URI contains DOI",
+  "dc-identifier-uri-contains-doi_condition.label": "URL contains DOI",
 
   "doi-filter.label": "DOI filter",
 

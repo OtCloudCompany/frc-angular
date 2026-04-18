@@ -131,7 +131,7 @@ export class RecentItemListComponent implements OnInit, OnDestroy {
       sortField: environment.homePage.recentSubmissions.sortField,
       sortDirection: 'DESC' as SortDirection,
       page: 1,
-      pageSize: 60
+      pageSize: 40
     });
   }
 
