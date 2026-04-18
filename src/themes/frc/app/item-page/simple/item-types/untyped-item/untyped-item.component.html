@@ -37,19 +37,25 @@
         <ds-item-page-uri-field [item]="object" [fields]="['dc.identifier.uri']" [label]="'item.page.uri'">
         </ds-item-page-uri-field>
 
-        @if(object.hasMetadata(['dc.relation.isreferencedbyDuke', 'dc.relation.isreferencedbyGoogle',
+        @if(object.hasMetadata(['dc.relation.isreferencedbyDuke','dc.relation.isreferencedbyHeinOnline',
+        'dc.relation.isreferencedbyArchive', 'dc.relation.isreferencedbyGoogle',
         'dc.relation.isreferencedbyHathi', 'dc.relation.isreferencedbyGale', 'dc.relation.isreferencedbyAvalon',
         'dc.relation.isreferencedbyDelaware', 'dc.relation.isreferencedby'])){
-        <h2 class="simple-view-element-header ng-star-inserted">
-            {{'item.page.referencedby' | translate}}
-        </h2>
-        <ds-item-page-uri-field [item]="object" [fields]="['dc.relation.isreferencedbyDuke']" />
-        <ds-item-page-uri-field [item]="object" [fields]="['dc.relation.isreferencedbyGoogle']" />
-        <ds-item-page-uri-field [item]="object" [fields]="['dc.relation.isreferencedbyHathi']" />
-        <ds-item-page-uri-field [item]="object" [fields]="['dc.relation.isreferencedbyGale']" />
-        <ds-item-page-uri-field [item]="object" [fields]="['dc.relation.isreferencedbyAvalon']" />
-        <ds-item-page-uri-field [item]="object" [fields]="['dc.relation.isreferencedbyDelaware']" />
-        <ds-item-page-uri-field [item]="object" [fields]="['dc.relation.isreferencedby']" />
+        <div class="simple-view-element">
+            <h5 class="simple-view-element-header ng-star-inserted">
+                {{'item.page.referencedby' | translate}}
+            </h5>
+            <ds-item-page-uri-field [item]="object" [fields]="['dc.relation.isreferencedbyDuke']" />
+            <ds-item-page-uri-field [item]="object" [fields]="['dc.relation.isreferencedbyGoogle']" />
+            <ds-item-page-uri-field [item]="object" [fields]="['dc.relation.isreferencedbyHathi']" />
+            <ds-item-page-uri-field [item]="object" [fields]="['dc.relation.isreferencedbyGale']" />
+            <ds-item-page-uri-field [item]="object" [fields]="['dc.relation.isreferencedbyAvalon']" />
+            <ds-item-page-uri-field [item]="object" [fields]="['dc.relation.isreferencedbyDelaware']" />
+            <ds-item-page-uri-field [item]="object" [fields]="['dc.relation.isreferencedbyHeinOnline']" />
+            <ds-item-page-uri-field [item]="object" [fields]="['dc.relation.isreferencedbyArchive']" />
+            <ds-item-page-uri-field [item]="object" [fields]="['dc.relation.isreferencedby']" />
+        </div>
+
         }
 
         <ds-item-page-cc-license-field [item]="object" [variant]="'full'">
