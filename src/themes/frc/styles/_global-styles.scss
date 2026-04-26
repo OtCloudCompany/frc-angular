@@ -207,10 +207,11 @@ fieldset:disabled .btn {
     ds-media-viewer .media-viewer {
         position: relative;
         // border: 1px solid red;
-        height: 250px;
+        // max-height: 250px;
         min-width: 175px;
         display: inline-block;
     }
+
 }
 
 // .search-sidebar-content 
@@ -376,9 +377,3 @@ ds-search-label-range .bg-primary {
     background-color: var(--frc-light-brown) !important;
     color: white !important;
 }
-
-// @media (min-width: 1200px) {
-//     h2, .h2 {
-//         font-size: 1.25rem;
-//     }
-// }
