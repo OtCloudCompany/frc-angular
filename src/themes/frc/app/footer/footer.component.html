@@ -37,13 +37,8 @@
                     {{ 'footer.link.dspace' | translate}}
                 </a>
                 {{ 'footer.copyright' | translate:{year: dateObj | date:'y'} }}
-
-                <!-- <a class="text-white" href="https://www.lyrasis.org/" role="link" tabindex="0">
-                    {{ 'footer.link.lyrasis' | translate}}
-                </a> -->
-
             </p>
-            <ul class="footer-info list-unstyled d-flex justify-content-center mb-0">
+            <ul class="footer-info list-unstyled d-flex flex-wrap justify-content-center mb-0">
                 @if (showCookieSettings) {
                 <li>
                     <button class="btn btn-link text-white" type="button" (click)="openCookieSettings()" role="button"

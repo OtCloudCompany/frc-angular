@@ -4,9 +4,15 @@
             <div>
                 <h3 class="display-10">Firearms Research Center Repository</h3>
                 <div class="max-width-700 bg-light p-2 w-100justify-content-center align-items-center my-3">
+                    @if (isMobile$ | async) {
+                    <ds-search-form [inPlaceSearch]="false" [showScopeSelector]="false"
+                        [searchPlaceholder]="'home.search-form.placeholder' | translate">
+                    </ds-search-form>
+                    }@else{
                     <ds-search-form [inPlaceSearch]="false" [showScopeSelector]="true"
                         [searchPlaceholder]="'home.search-form.placeholder' | translate">
                     </ds-search-form>
+                    }
                 </div>
             </div>
         </div>
