@@ -7,7 +7,6 @@ import { ThemedHomeNewsComponent } from '../../../../app/home-page/home-news/the
 import { HomePageComponent as BaseComponent } from '../../../../app/home-page/home-page.component';
 import { RecentItemListComponent } from '../../../../app/home-page/recent-item-list/recent-item-list.component';
 import { ThemedTopLevelCommunityListComponent } from '../../../../app/home-page/top-level-community-list/themed-top-level-community-list.component';
-import { SuggestionsPopupComponent } from '../../../../app/notifications/suggestions/popup/suggestions-popup.component';
 import { ThemedConfigurationSearchPageComponent } from '../../../../app/search-page/themed-configuration-search-page.component';
 
 @Component({
@@ -20,7 +19,6 @@ import { ThemedConfigurationSearchPageComponent } from '../../../../app/search-p
     HomeCoarComponent,
     NgTemplateOutlet,
     RecentItemListComponent,
-    SuggestionsPopupComponent,
     ThemedConfigurationSearchPageComponent,
     ThemedHomeNewsComponent,
     ThemedTopLevelCommunityListComponent,

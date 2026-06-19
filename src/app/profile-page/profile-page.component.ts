@@ -41,7 +41,6 @@ import {
   getFirstCompletedRemoteData,
   getRemoteDataPayload,
 } from '../core/shared/operators';
-import { SuggestionsNotificationComponent } from '../notifications/suggestions/notification/suggestions-notification.component';
 import { AlertComponent } from '../shared/alert/alert.component';
 import {
   hasValue,
@@ -55,7 +54,6 @@ import { PaginationComponentOptions } from '../shared/pagination/pagination-comp
 import { followLink } from '../shared/utils/follow-link-config.model';
 import { VarDirective } from '../shared/utils/var.directive';
 import { ThemedProfilePageMetadataFormComponent } from './profile-page-metadata-form/themed-profile-page-metadata-form.component';
-import { ProfilePageResearcherFormComponent } from './profile-page-researcher-form/profile-page-researcher-form.component';
 import { ProfilePageSecurityFormComponent } from './profile-page-security-form/profile-page-security-form.component';
 
 @Component({
@@ -68,10 +66,8 @@ import { ProfilePageSecurityFormComponent } from './profile-page-security-form/p
     ErrorComponent,
     NgTemplateOutlet,
     PaginationComponent,
-    ProfilePageResearcherFormComponent,
     ProfilePageSecurityFormComponent,
     RouterModule,
-    SuggestionsNotificationComponent,
     ThemedLoadingComponent,
     ThemedProfilePageMetadataFormComponent,
     TranslateModule,
@@ -141,8 +137,6 @@ export class ProfilePageComponent implements OnInit {
     pageSize: 20,
   });
 
-  isResearcherProfileEnabled$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
-
   constructor(private authService: AuthService,
               private notificationsService: NotificationsService,
               private translate: TranslateService,
@@ -176,12 +170,6 @@ export class ProfilePageComponent implements OnInit {
     );
     this.canChangePassword$ = this.user$.pipe(switchMap((user: EPerson) => this.authorizationService.isAuthorized(FeatureID.CanChangePassword, user._links.self.href)));
     this.specialGroupsRD$ = this.authService.getSpecialGroupsFromAuthStatus();
-
-    this.configurationService.findByPropertyName('researcher-profile.entity-type').pipe(
-      getFirstCompletedRemoteData(),
-    ).subscribe((configRD: RemoteData<ConfigurationProperty>) => {
-      this.isResearcherProfileEnabled$.next(configRD.hasSucceeded && configRD.payload.values.length > 0);
-    });
   }
 
   /**

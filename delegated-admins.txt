@@ -1,0 +1,91 @@
+# Delegated administrator restrictions
+
+# Authorization for a delegated community administrator to delete subcommunities or collections.
+core.authorization.community-admin.delete-subelement = false
+
+# Authorization for a delegated community administrator to create subcommunities or collections.
+core.authorization.community-admin.create-subelement = false
+
+# Authorization for a delegated community administrator to administrate the community policies.
+core.authorization.community-admin.policies = false
+
+# Authorization for a delegated community administrator to edit the group of community admins.
+core.authorization.community-admin.admin-group = false
+
+# Authorization for a delegated community administrator to administrate the policies for underlying collections.
+core.authorization.community-admin.collection.policies = false
+
+# Authorization for a delegated community administrator to administrate the item template for 
+# underlying collections.
+core.authorization.community-admin.collection.template-item = true
+
+# Authorization for a delegated community administrator to administrate the group of submitters 
+# for underlying collections.
+core.authorization.community-admin.collection.submitters = false
+
+Authorization for a delegated community administrator to administrate the workflows for underlying collections.
+core.authorization.community-admin.collection.workflows = false
+
+# Authorization for a delegated community administrator to administrate the group of administrators for 
+# underlying collections.
+core.authorization.community-admin.collection.admin-group = false
+
+# Authorization for a delegated community administrator to delete items in underlying collections.
+core.authorization.community-admin.item.delete = false
+
+# Authorization for a delegated community administrator to withdraw items in underlying collections.
+core.authorization.community-admin.item.withdraw = true
+
+# Authorization for a delegated community administrator to reinstate items in underlying collections.
+core.authorization.community-admin.item.reinstate = true
+
+# Authorization for a delegated community administrator to administrate item policies in underlying collections.
+core.authorization.community-admin.item.policies = false
+
+# Authorization for a delegated community administrator to create additional bitstreams in 
+# items in underlying collections.
+core.authorization.community-admin.item.create-bitstream = true
+
+# Authorization for a delegated community administrator to delete bitstreams from items in 
+# underlying collections.
+core.authorization.community-admin.item.delete-bitstream = true
+
+Authorization for a delegated community administrator to administer licenses from items in 
+# underlying collections.
+core.authorization.community-admin.item.cc-license = true
+
+### COLLECTION ADMINISTRATION ###
+
+# The properties for collection administrators work similar to those of community administrators,
+# with respect to collection administration.
+
+core.authorization.collection-admin.policies = false
+core.authorization.collection-admin.template-item = true
+core.authorization.collection-admin.submitters = false
+core.authorization.collection-admin.workflows = false
+core.authorization.collection-admin.admin-group = false
+
+#Item owned by the above Collection. The properties for collection administrators work similar to those of
+# community administrators, with respect to administration of items in underlying collections.
+core.authorization.collection-admin.item.delete = false
+core.authorization.collection-admin.item.withdraw = true
+core.authorization.collection-admin.item.reinstatiate =true
+core.authorization.collection-admin.item.policies = false
+
+# Bundles of bitstreams, related to items owned by collections in the above Community. 
+# The properties for collection administrators work similar to those of community administrators, 
+# with respect to administration of bitstreams related to items in underlying collections.
+core.authorization.collection-admin.item.create-bitstream = true
+core.authorization.collection-admin.item.delete-bitstream = true
+core.authorization.collection-admin.item-admin.cc-license = true
+
+# The properties for item administrators work similar to those of community and collection 
+# administrators, with respect to administration of items in underlying collections.
+core.authorization.item-admin.policies = false
+
+# Bundles of bitstreams, related to items owned by collections in the above Community. 
+# The properties for item administrators work similar to those of community and collection 
+# administrators, with respect to administration of bitstreams related to items in underlying collections.
+core.authorization.item-admin.create-bitstream = true
+core.authorization.item-admin.delete-bitstream = true
+core.authorization.item-admin.cc-license = true

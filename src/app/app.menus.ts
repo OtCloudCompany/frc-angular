@@ -22,7 +22,6 @@ import { EditMenuProvider } from './shared/menu/providers/edit.menu';
 import { ExportMenuProvider } from './shared/menu/providers/export.menu';
 import { HealthMenuProvider } from './shared/menu/providers/health.menu';
 import { ImportMenuProvider } from './shared/menu/providers/import.menu';
-import { ClaimMenuProvider } from './shared/menu/providers/item-claim.menu';
 import { OrcidMenuProvider } from './shared/menu/providers/item-orcid.menu';
 import { VersioningMenuProvider } from './shared/menu/providers/item-versioning.menu';
 import { NewMenuProvider } from './shared/menu/providers/new.menu';
@@ -91,9 +90,6 @@ export const MENUS = buildMenuStructure({
         MenuRoute.ITEM_PAGE,
       ),
       OrcidMenuProvider.onRoute(
-        MenuRoute.ITEM_PAGE,
-      ),
-      ClaimMenuProvider.onRoute(
         MenuRoute.ITEM_PAGE,
       ),
     ]),

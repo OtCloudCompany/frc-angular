@@ -144,7 +144,7 @@ fieldset:disabled .btn {
 
 #main-navbar .ds-menu-item {
     color: #fff !important;
-    padding: 0.5rem 0;
+    padding: 10 0 !important;
 }
 
 #main-navbar .toggle-menu-icon {
@@ -364,6 +364,7 @@ ds-themed-login-page {
 
 /* Hide the auto-generated Communities & Collections section.
            CSS ensures it's hidden in SSR HTML before client hydration. */
+ds-navbar-section:has(> #navbar-section-public_0_0),
 #navbar-section-public_0_0 {
     display: none !important;
 }

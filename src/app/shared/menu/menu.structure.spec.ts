@@ -13,7 +13,6 @@ import { EditMenuProvider } from './providers/edit.menu';
 import { ExportMenuProvider } from './providers/export.menu';
 import { HealthMenuProvider } from './providers/health.menu';
 import { ImportMenuProvider } from './providers/import.menu';
-import { ClaimMenuProvider } from './providers/item-claim.menu';
 import { OrcidMenuProvider } from './providers/item-orcid.menu';
 import { VersioningMenuProvider } from './providers/item-versioning.menu';
 import { NewMenuProvider } from './providers/new.menu';
@@ -62,10 +61,6 @@ describe('buildMenuStructure', () => {
           OrcidMenuProvider.onRoute(
             MenuRoute.ITEM_PAGE,
           ),
-          ClaimMenuProvider.onRoute(
-            MenuRoute.ITEM_PAGE,
-            MenuRoute.COLLECTION_PAGE,
-          ),
         ]),
       ],
     };
@@ -91,7 +86,6 @@ describe('buildMenuStructure', () => {
       DSpaceObjectEditMenuProvider,
       VersioningMenuProvider,
       OrcidMenuProvider,
-      ClaimMenuProvider,
       DsoOptionMenuProvider,
     ];
 

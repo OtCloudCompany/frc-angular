@@ -30,7 +30,6 @@ import { AuthorizationDataService } from '../core/data/feature-authorization/aut
 import { EPersonDataService } from '../core/eperson/eperson-data.service';
 import { EPerson } from '../core/eperson/models/eperson.model';
 import { ConfigurationProperty } from '../core/shared/configuration-property.model';
-import { SuggestionsNotificationComponent } from '../notifications/suggestions/notification/suggestions-notification.component';
 import { ErrorComponent } from '../shared/error/error.component';
 import { ThemedLoadingComponent } from '../shared/loading/themed-loading.component';
 import { NotificationsService } from '../shared/notifications/notifications.service';
@@ -47,7 +46,6 @@ import { createPaginatedList } from '../shared/testing/utils.test';
 import { VarDirective } from '../shared/utils/var.directive';
 import { ProfilePageComponent } from './profile-page.component';
 import { ThemedProfilePageMetadataFormComponent } from './profile-page-metadata-form/themed-profile-page-metadata-form.component';
-import { ProfilePageResearcherFormComponent } from './profile-page-researcher-form/profile-page-researcher-form.component';
 import { ProfilePageSecurityFormComponent } from './profile-page-security-form/profile-page-security-form.component';
 
 describe('ProfilePageComponent', () => {
@@ -138,8 +136,6 @@ describe('ProfilePageComponent', () => {
           imports: [
             ThemedProfilePageMetadataFormComponent,
             ProfilePageSecurityFormComponent,
-            ProfilePageResearcherFormComponent,
-            SuggestionsNotificationComponent,
             NgTemplateOutlet,
             PaginationComponent,
             ThemedLoadingComponent,
@@ -365,57 +361,6 @@ describe('ProfilePageComponent', () => {
         fixture.detectChanges();
         const specialGroupsEle = fixture.debugElement.query(By.css('[data-test="specialGroups"]'));
         expect(specialGroupsEle).toBeFalsy();
-      });
-    });
-  });
-
-  describe('isResearcherProfileEnabled', () => {
-
-    describe('when configuration service return values', () => {
-
-      beforeEach(() => {
-        configurationService.findByPropertyName.and.returnValue(createSuccessfulRemoteDataObject$(validConfiguration));
-        fixture.detectChanges();
-      });
-
-      it('should return true', () => {
-        const result = component.isResearcherProfileEnabled$;
-        const expected = cold('a', {
-          a: true,
-        });
-        expect(result).toBeObservable(expected);
-      });
-    });
-
-    describe('when configuration service return no values', () => {
-
-      beforeEach(() => {
-        configurationService.findByPropertyName.and.returnValue(createSuccessfulRemoteDataObject$(emptyConfiguration));
-        fixture.detectChanges();
-      });
-
-      it('should return false', () => {
-        const result = component.isResearcherProfileEnabled$;
-        const expected = cold('a', {
-          a: false,
-        });
-        expect(result).toBeObservable(expected);
-      });
-    });
-
-    describe('when configuration service return an error', () => {
-
-      beforeEach(() => {
-        configurationService.findByPropertyName.and.returnValue(createFailedRemoteDataObject$());
-        fixture.detectChanges();
-      });
-
-      it('should return false', () => {
-        const result = component.isResearcherProfileEnabled$;
-        const expected = cold('a', {
-          a: false,
-        });
-        expect(result).toBeObservable(expected);
       });
     });
   });

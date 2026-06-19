@@ -14,9 +14,7 @@ import {
 } from 'src/config/app-config.interface';
 
 import { Site } from '../core/shared/site.model';
-import { SuggestionsPopupComponent } from '../notifications/suggestions/popup/suggestions-popup.component';
 import { ThemedConfigurationSearchPageComponent } from '../search-page/themed-configuration-search-page.component';
-import { ThemedSearchFormComponent } from '../shared/search-form/themed-search-form.component';
 import { HomeCoarComponent } from './home-coar/home-coar.component';
 import { ThemedHomeNewsComponent } from './home-news/themed-home-news.component';
 import { RecentItemListComponent } from './recent-item-list/recent-item-list.component';
@@ -30,10 +28,8 @@ import { ThemedTopLevelCommunityListComponent } from './top-level-community-list
     HomeCoarComponent,
     NgTemplateOutlet,
     RecentItemListComponent,
-    SuggestionsPopupComponent,
     ThemedConfigurationSearchPageComponent,
     ThemedHomeNewsComponent,
-    ThemedSearchFormComponent,
     ThemedTopLevelCommunityListComponent,
     TranslateModule,
   ],
