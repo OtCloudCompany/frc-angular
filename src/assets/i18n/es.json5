@@ -4898,7 +4898,7 @@
 
   "search.sidebar.results": "resultados",
 
-  "search.sidebar.settings.rpp": "resultados por página",
+  "search.sidebar.settings.rpp": "Resultados por página",
 
   "search.sidebar.settings.sort-by": "Ordenar por",
 
@@ -7392,9 +7392,9 @@
 
   "submission.sections.submit.progressbar.describe.editorsNote": "Editor's Note",
 
-  "collection.edit.tabs.i18n.head": "Traducciones (i18n)",
+  "collection.edit.tabs.i18n.head": "Traducciones",
 
-  "community.edit.tabs.i18n.head": "Traducciones (i18n)",
+  "community.edit.tabs.i18n.head": "Traducciones",
 
   "collection.edit.tabs.i18n.title": "Editar traducciones de la colección",
 

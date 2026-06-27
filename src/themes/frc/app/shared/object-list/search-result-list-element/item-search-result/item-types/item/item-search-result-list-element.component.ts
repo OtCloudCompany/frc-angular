@@ -2,8 +2,9 @@ import {
   AsyncPipe,
   NgClass,
 } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 import { Context } from '../../../../../../../../../app/core/shared/context.model';
 import { ViewMode } from '../../../../../../../../../app/core/shared/view-mode.model';
@@ -14,15 +15,14 @@ import { ItemSearchResultListElementComponent as BaseComponent } from '../../../
 import { TruncatableComponent } from '../../../../../../../../../app/shared/truncatable/truncatable.component';
 import { TruncatablePartComponent } from '../../../../../../../../../app/shared/truncatable/truncatable-part/truncatable-part.component';
 import { ThemedThumbnailComponent } from '../../../../../../../../../app/thumbnail/themed-thumbnail.component';
+import { getLocalizedMetadata, getLocalizedMetadataList } from '../../../../../frc-metadata-utils';
 
-@listableObjectComponent('PublicationSearchResult', ViewMode.ListElement, Context.Any, 'custom')
-@listableObjectComponent(ItemSearchResult, ViewMode.ListElement, Context.Any, 'custom')
+@listableObjectComponent('PublicationSearchResult', ViewMode.ListElement, Context.Any, 'frc')
+@listableObjectComponent(ItemSearchResult, ViewMode.ListElement, Context.Any, 'frc')
 @Component({
   selector: 'ds-item-search-result-list-element',
-  // styleUrls: ['./item-search-result-list-element.component.scss'],
   styleUrls: ['../../../../../../../../../app/shared/object-list/search-result-list-element/item-search-result/item-types/item/item-search-result-list-element.component.scss'],
-  // templateUrl: './item-search-result-list-element.component.html',
-  templateUrl: '../../../../../../../../../app/shared/object-list/search-result-list-element/item-search-result/item-types/item/item-search-result-list-element.component.html',
+  templateUrl: './item-search-result-list-element.component.html',
   imports: [
     AsyncPipe,
     NgClass,
@@ -34,4 +34,24 @@ import { ThemedThumbnailComponent } from '../../../../../../../../../app/thumbna
   ],
 })
 export class ItemSearchResultListElementComponent extends BaseComponent {
+  protected translate = inject(TranslateService);
+
+  getDsoTitle(): string {
+    return getLocalizedMetadata(this.dso, 'dc.title', this.translate) || this.dsoTitle || '';
+  }
+
+  firstMetadataValue(keyOrKeys: string | string[], escapeHTML = true): string {
+    if (typeof keyOrKeys === 'string') {
+      return getLocalizedMetadata(this.dso, keyOrKeys, this.translate) || super.firstMetadataValue(keyOrKeys, escapeHTML);
+    }
+    return super.firstMetadataValue(keyOrKeys, escapeHTML);
+  }
+
+  allMetadataValues(keyOrKeys: string | string[], escapeHTML = true): string[] {
+    const localized = getLocalizedMetadataList(this.dso, keyOrKeys, this.translate);
+    if (localized.length > 0) {
+      return localized.map(val => val.value);
+    }
+    return super.allMetadataValues(keyOrKeys, escapeHTML);
+  }
 }
