@@ -2,12 +2,13 @@ import { AsyncPipe } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
+  inject,
 } from '@angular/core';
 import {
   RouterModule,
   RouterOutlet,
 } from '@angular/router';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 import { CommunityPageComponent as BaseComponent } from '../../../../app/community-page/community-page.component';
 import { fadeInOut } from '../../../../app/shared/animations/fade';
@@ -20,12 +21,12 @@ import { DsoEditMenuComponent } from '../../../../app/shared/dso-page/dso-edit-m
 import { ErrorComponent } from '../../../../app/shared/error/error.component';
 import { ThemedLoadingComponent } from '../../../../app/shared/loading/themed-loading.component';
 import { VarDirective } from '../../../../app/shared/utils/var.directive';
+import { getLocalizedMetadata as getLocalizedMetadataUtil } from '../shared/frc-metadata-utils';
+import { DSpaceObject } from 'src/app/core/shared/dspace-object.model';
 
 @Component({
   selector: 'ds-themed-community-page',
-  // templateUrl: './community-page.component.html',
-  templateUrl: '../../../../app/community-page/community-page.component.html',
-  // styleUrls: ['./community-page.component.scss']
+  templateUrl: './community-page.component.html',
   styleUrls: ['../../../../app/community-page/community-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [fadeInOut],
@@ -46,4 +47,9 @@ import { VarDirective } from '../../../../app/shared/utils/var.directive';
   ],
 })
 export class CommunityPageComponent extends BaseComponent {
+  protected translate = inject(TranslateService);
+
+  getLocalizedMetadata(dso: DSpaceObject, field: string): string {
+    return getLocalizedMetadataUtil(dso, field, this.translate);
+  }
 }

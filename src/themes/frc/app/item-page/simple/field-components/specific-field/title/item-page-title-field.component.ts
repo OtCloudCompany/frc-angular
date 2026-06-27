@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
-import { TranslateModule } from '@ngx-translate/core';
+import { Component, inject } from '@angular/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 import { ItemPageTitleFieldComponent as BaseComponent } from '../../../../../../../../app/item-page/simple/field-components/specific-field/title/item-page-title-field.component';
+import { getLocalizedMetadata } from '../../../../../shared/frc-metadata-utils';
 
 @Component({
   selector: 'ds-themed-item-page-title-field',
@@ -11,4 +12,10 @@ import { ItemPageTitleFieldComponent as BaseComponent } from '../../../../../../
   ],
 })
 export class ItemPageTitleFieldComponent extends BaseComponent {
+  protected translate = inject(TranslateService);
+
+  getLocalizedTitle(): string {
+    return getLocalizedMetadata(this.item, 'dc.title', this.translate)
+      || this.dsoNameService.getName(this.item);
+  }
 }

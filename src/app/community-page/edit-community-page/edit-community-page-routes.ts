@@ -12,6 +12,7 @@ import { CommunityCurateComponent } from './community-curate/community-curate.co
 import { CommunityMetadataComponent } from './community-metadata/community-metadata.component';
 import { CommunityRolesComponent } from './community-roles/community-roles.component';
 import { EditCommunityPageComponent } from './edit-community-page.component';
+import { CommunityI18nComponent } from '../../../themes/frc/app/custom-apps/comcol-i18n-metadata/community-i18n.component';
 
 /**
  * Routing module that handles the routing for the Edit Community page administrator functionality
@@ -82,6 +83,11 @@ export const ROUTES: Route[] = [
             data: { title: 'community.edit.tabs.authorizations.title', showBreadcrumbs: true, hideReturnButton: true },
           },
         ],
+      },
+      {
+        path: 'i18n',
+        component: CommunityI18nComponent,
+        data: { title: 'community.edit.tabs.i18n.title', showBreadcrumbs: true },
       },
     ],
   },

@@ -1,4 +1,4 @@
-@if (object.firstMetadataValue('dc.description.abstract'); as abstract) {
+@if (getLocalizedAbstract(); as abstract) {
 <div class="simple-view-element">
     <ds-truncatable [showToggle]="true" [id]="'abstractOuter'">
         <h5 class="simple-view-element-header">Abstract</h5>

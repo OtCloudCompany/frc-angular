@@ -1,4 +1,4 @@
-@if (object.firstMetadataValue('dc.description.summary'); as summary) {
+@if (getLocalizedSummary(); as summary) {
 <div class="simple-view-element">
     <ds-truncatable [showToggle]="true" [id]="'summaryOuter'">
         <h5 class="simple-view-element-header">Summary</h5>

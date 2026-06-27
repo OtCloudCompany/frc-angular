@@ -1,4 +1,23 @@
 {
+  "collection.edit.tabs.i18n.head": "Translations",
+  "community.edit.tabs.i18n.head": "Translations",
+  "collection.edit.tabs.i18n.title": "Edit Collection Translations",
+  "community.edit.tabs.i18n.title": "Edit Community Translations",
+  "comcol.i18n-metadata.intro-alert": "As an administrator, you can add and manage translations for the main metadata fields of this Community or Collection here. The language tags must correspond to the UI language codes (e.g. 'en', 'es').",
+  "comcol.i18n-metadata.validation.title": "Validation Error",
+  "comcol.i18n-metadata.validation.message": "Both translation value and language code are required.",
+  "comcol.i18n-metadata.no-changes.title": "No Changes",
+  "comcol.i18n-metadata.no-changes.message": "No changes were detected to save.",
+  "comcol.i18n-metadata.save.success.title": "Success",
+  "comcol.i18n-metadata.save.success.message": "Translations saved successfully.",
+  "comcol.i18n-metadata.save.error.title": "Error Saving",
+  "comcol.i18n-metadata.save.error.message": "An error occurred while saving translations.",
+  "comcol.i18n-metadata.discarded.title": "Discarded",
+  "comcol.i18n-metadata.discarded.message": "Changes discarded. Reverted to saved translations.",
+  "comcol.i18n-metadata.no-values": "No translations yet.",
+  "comcol.i18n-metadata.remove": "Remove translation",
+  "menu.section.home": "Home",
+  "menu.section.exploreCollections": "Explore Collections",
   "curation-task.task.cleanmetadata.label": "Clean FRC Metadata",
   "item.page.referencedby": "Source",
   "item.page.referencedbyDuke": "Source",
@@ -84,6 +103,21 @@
   "community.page.handle": "Permanent URL for this community",
   "collection.page.handle": "Permanent URL for this collection",
   "mydspace.results.no-uri": "No URL",
+  "site.name": "Firearms Research Center Repository",
+  "browse.comcol.head": "Browse",
+  
+  "home.sidebar.collections":"Collections",
+  "home.sidebar.citations":"Citations",
+  "home.sidebar.category":"Category",
+  "home.sidebar.jurisdictions":"Jurisdiction",  
+  "home.sidebar.myAccount":"My Account",  
+  "home.sidebar.login":"Login",  
+  "home.sidebar.browse":"Browse",  
+
+  "footer.copyright": "Copyright © {{ year }}",
+  "footer.link.accessibility": "Accessibility settings",
+  "footer.link.socialMedia": "Get the latest from our Social Media Platforms",
+  "footer.link.dspace": "Firearms Research Center,",
 
   "401.help": "You're not authorized to access this page. You can use the button below to get back to the home page.",
 
@@ -1109,8 +1143,6 @@
 
   "browse.comcol.by.nsi": "By Norwegian Science Index",
 
-  "browse.comcol.head": "Browse",
-
   "browse.empty": "No items to show.",
 
   "browse.metadata.author": "Author",
@@ -2018,11 +2050,7 @@
 
   "file-section.error.header": "Error obtaining files for this item",
 
-  "footer.copyright": "© {{ year }}",
-
   "footer.link.accessibility": "Accessibility settings",
-
-  "footer.link.dspace": "Firearms Research Center",
 
   "footer.link.lyrasis": "LYRASIS",
 

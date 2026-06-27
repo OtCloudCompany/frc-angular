@@ -2,9 +2,10 @@ import { AsyncPipe } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
+  inject,
 } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 import { CollectionPageComponent as BaseComponent } from '../../../../app/collection-page/collection-page.component';
 import {
@@ -20,12 +21,12 @@ import { DsoEditMenuComponent } from '../../../../app/shared/dso-page/dso-edit-m
 import { ErrorComponent } from '../../../../app/shared/error/error.component';
 import { ThemedLoadingComponent } from '../../../../app/shared/loading/themed-loading.component';
 import { VarDirective } from '../../../../app/shared/utils/var.directive';
+import { getLocalizedMetadata as getLocalizedMetadataUtil } from '../shared/frc-metadata-utils';
+import { DSpaceObject } from 'src/app/core/shared/dspace-object.model';
 
 @Component({
   selector: 'ds-themed-collection-page',
-  // templateUrl: './collection-page.component.html',
-  templateUrl: '../../../../app/collection-page/collection-page.component.html',
-  // styleUrls: ['./collection-page.component.scss']
+  templateUrl: './collection-page.component.html',
   styleUrls: ['../../../../app/collection-page/collection-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [
@@ -48,4 +49,9 @@ import { VarDirective } from '../../../../app/shared/utils/var.directive';
   ],
 })
 export class CollectionPageComponent extends BaseComponent {
+  protected translate = inject(TranslateService);
+
+  getLocalizedMetadata(dso: DSpaceObject, field: string): string {
+    return getLocalizedMetadataUtil(dso, field, this.translate);
+  }
 }

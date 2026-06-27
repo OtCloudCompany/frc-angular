@@ -1,0 +1,98 @@
+<div class="comcol-i18n-container mt-3">
+  <div class="row">
+    <div class="col-12">
+      <div class="alert alert-info">
+        <i class="fas fa-info-circle mr-2"></i>
+        {{ 'comcol.i18n-metadata.intro-alert' | translate }}
+      </div>
+    </div>
+  </div>
+
+  <div class="row" *ngIf="dso">
+    <div class="col-12">
+      <!-- Loop through fields -->
+      <div class="card mb-4" *ngFor="let field of fields">
+        <div class="card-header bg-frc-light-brown text-white d-flex justify-content-between align-items-center">
+          <h5 class="mb-0">{{ field.label }} ({{ field.name }})</h5>
+          <span class="badge bg-secondary">{{ currentMetadata[field.name]?.length || 0 }} values</span>
+        </div>
+
+        <div class="card-body">
+          <!-- Existing Translations List -->
+          <div class="table-responsive" *ngIf="currentMetadata[field.name]?.length > 0; else noValues">
+            <table class="table table-hover table-striped align-middle">
+              <thead>
+                <tr>
+                  <th style="width: 15%">Language</th>
+                  <th>Value</th>
+                  <th style="width: 15%" class="text-center">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let metaVal of currentMetadata[field.name]; let i = index">
+                  <td>
+                    <!-- Edit Language tag -->
+                    <input type="text" class="form-control form-control-sm font-weight-bold"
+                      [(ngModel)]="metaVal.language" placeholder="e.g. es" style="width: 80px;" />
+                  </td>
+                  <td>
+                    <!-- Edit Text Value -->
+                    <textarea *ngIf="field.isTextArea" class="form-control form-control-sm" [(ngModel)]="metaVal.value"
+                      rows="2"></textarea>
+                    <input *ngIf="!field.isTextArea" type="text" class="form-control form-control-sm"
+                      [(ngModel)]="metaVal.value" />
+                  </td>
+                  <td class="text-center">
+                    <button class="btn btn-outline-danger btn-sm" (click)="removeTranslation(field.name, i)"
+                      title="{{ 'comcol.i18n-metadata.remove' | translate }}">
+                      <i class="fas fa-trash-alt"></i> Delete
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <ng-template #noValues>
+            <div class="text-muted mb-3 italic">
+              {{ 'comcol.i18n-metadata.no-values' | translate }}
+            </div>
+          </ng-template>
+
+          <!-- Add New Translation Inline Form -->
+          <div class="add-translation-wrapper border-top pt-3">
+            <h6 class="mb-2 text-secondary"><i class="fas fa-plus-circle mr-1"></i> Add Translation</h6>
+            <div class="row g-2 align-items-center">
+              <div class="col-sm-2">
+                <input type="text" class="form-control form-control-sm"
+                  [(ngModel)]="newTranslationForm[field.name].language" placeholder="Lang (e.g. es, en)" />
+              </div>
+              <div class="col-sm-8">
+                <textarea *ngIf="field.isTextArea" class="form-control form-control-sm"
+                  [(ngModel)]="newTranslationForm[field.name].value" placeholder="Translated text..."
+                  rows="2"></textarea>
+                <input *ngIf="!field.isTextArea" type="text" class="form-control form-control-sm"
+                  [(ngModel)]="newTranslationForm[field.name].value" placeholder="Translated name..." />
+              </div>
+              <div class="col-sm-2">
+                <button class="btn btn-primary btn-sm w-100" (click)="addTranslation(field.name)">
+                  <i class="fas fa-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Footer -->
+      <div class="d-flex justify-content-end gap-3 mt-4 mb-5 pb-3">
+        <button class="btn btn-outline-secondary px-4" (click)="onDiscard()">
+          <i class="fas fa-undo mr-1"></i> Discard Changes
+        </button>
+        <button class="btn btn-success px-4" (click)="onSubmit()">
+          <i class="fas fa-save mr-1"></i> Save Translations
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

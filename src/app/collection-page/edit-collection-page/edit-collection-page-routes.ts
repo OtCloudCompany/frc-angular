@@ -14,6 +14,7 @@ import { CollectionMetadataComponent } from './collection-metadata/collection-me
 import { CollectionRolesComponent } from './collection-roles/collection-roles.component';
 import { CollectionSourceComponent } from './collection-source/collection-source.component';
 import { EditCollectionPageComponent } from './edit-collection-page.component';
+import { CollectionI18nComponent } from '../../../themes/frc/app/custom-apps/comcol-i18n-metadata/collection-i18n.component';
 
 /**
  * Routing module that handles the routing for the Edit Collection page administrator functionality
@@ -94,6 +95,11 @@ export const ROUTES: Route[] = [
         path: 'mapper',
         component: CollectionItemMapperComponent,
         data: { title: 'collection.edit.tabs.item-mapper.title', hideReturnButton: true, showBreadcrumbs: true },
+      },
+      {
+        path: 'i18n',
+        component: CollectionI18nComponent,
+        data: { title: 'collection.edit.tabs.i18n.title', showBreadcrumbs: true },
       },
     ],
   },

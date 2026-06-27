@@ -1,8 +1,9 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import { Item } from 'src/app/core/shared/item.model';
 import { TruncatableComponent } from 'src/app/shared/truncatable/truncatable.component';
 import { TruncatablePartComponent } from 'src/app/shared/truncatable/truncatable-part/truncatable-part.component';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { getLocalizedMetadata } from '../../shared/frc-metadata-utils';
 
 @Component({
   selector: 'ds-frc-law-text',
@@ -12,5 +13,9 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class FrcLawTextComponent {
   @Input() object: Item;
+  protected translate = inject(TranslateService);
 
+  getLocalizedLawText(): string {
+    return getLocalizedMetadata(this.object, 'dc.description.lawtext', this.translate);
+  }
 }

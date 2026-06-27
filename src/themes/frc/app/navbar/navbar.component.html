@@ -11,7 +11,7 @@
                 }
                 <div class="navbar-nav align-items-md-center me-auto shadow-none gapx-3" role="menubar">
                     <div class="ds-menu-item-wrapper text-md-right">
-                        <a role="menuitem" href="/home" class="ds-menu-item">Home</a>
+                        <a role="menuitem" href="/home" class="ds-menu-item">{{ "menu.section.home" | translate }}</a>
                     </div>
                     @for (section of (sections | async); track section) {
                     <ng-container

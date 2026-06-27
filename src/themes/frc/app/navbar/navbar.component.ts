@@ -59,7 +59,7 @@ export class NavbarComponent extends BaseComponent {
       model: {
         type: MenuItemType.LINK,
         disabled: false,
-        text: 'Explore Collections',
+        text: 'menu.section.exploreCollections',
         link: '/communities/9864e1c5-8193-4cda-90dc-152701a3c7b2/subcoms-cols'
       },
       index: 0.5,
