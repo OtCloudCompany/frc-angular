@@ -76,9 +76,21 @@
 
         <ds-item-page-date-field [item]="object"></ds-item-page-date-field>
 
-        <ds-frc-generic-item-page-field [item]="object" [fields]="['dc.coverage.spatial']" [separator]="', '"
+        <!-- <ds-frc-generic-item-page-field [item]="object" [fields]="['dc.coverage.spatial']" [separator]="', '"
             [label]="'item.page.coverage'">
-        </ds-frc-generic-item-page-field>
+        </ds-frc-generic-item-page-field> -->
+        @if (object.hasMetadata(['dc.coverage.spatial'])) {
+        <div class="item-page-field mb-2">
+            <div class="simple-view-element">
+                <h4 class="simple-view-element-header">{{ "item.page.coverage" | translate }}</h4>
+                @for (coverage of object.allMetadataValues(['dc.coverage.spatial']);
+                track $index; let last = $last) {
+                <a [routerLink]="['/browse/coverage']" [queryParams]="{ value: coverage }">{{ coverage }}</a>
+                @if (!last) { <span class="separator"> </span> }
+                }
+            </div>
+        </div>
+        }
 
         <ds-metadata-representation-list class="ds-item-page-mixed-author-field" [parentItem]="object"
             [itemType]="'Person'" [metadataFields]="['dc.contributor.author', 'dc.creator']"
