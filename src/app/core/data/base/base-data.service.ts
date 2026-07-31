@@ -131,7 +131,7 @@ export class BaseDataService<T extends CacheableObject> implements HALDataServic
       args = this.addHrefArg(href, args, `sort=${options.sort.field},${options.sort.direction}`);
     }
     if (hasValue(options.startsWith)) {
-      args = this.addHrefArg(href, args, `startsWith=${options.startsWith}`);
+      args = this.addHrefArg(href, args, `startsWith=${encodeURIComponent(options.startsWith)}`);
     }
     if (hasValue(options.searchParams)) {
       options.searchParams.forEach((param: RequestParam) => {

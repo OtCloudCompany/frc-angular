@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//f/projects/frc-backend/**)",
+      "Read(//f/projects/frc-backend/dspace-api/**)",
+      "Read(//f/projects/frc-backend/dspace-api/src/main/java/org/dspace/browse/**)",
+      "PowerShell(git -C f:\\\\projects\\\\FRC show b7536cd --stat)",
+      "PowerShell(git -C f:\\\\projects\\\\FRC show b7536cd)",
+      "Bash(curl -sg -o /dev/null -w \"HTTP %{http_code}\\\\n\" \"https://stage.dspace.firearmsresearchcenter.org/server/api/discover/browses/coverage/entries?startsWith=Arizona%20[Territory]\")",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" \"https://stage.dspace.firearmsresearchcenter.org/server/api/discover/browses/coverage/entries?startsWith=Arizona%20%5BTerritory%5D\")",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" \"https://stage.dspace.firearmsresearchcenter.org/server/api/discover/browses/coverage/entries?startsWith=Arizona%20%5C%5BTerritory%5C%5D\")",
+      "Bash(curl -s \"https://stage.dspace.firearmsresearchcenter.org/server/api/discover/browses/coverage/entries?startsWith=Arizona%20%5BTerritory%5D\")",
+      "Bash(curl -s \"https://stage.dspace.firearmsresearchcenter.org/server/api/discover/browses/coverage/entries?startsWith=Arizona%20%5C%5BTerritory%5C%5D\")",
+      "Bash(curl -s \"https://stage.dspace.firearmsresearchcenter.org/server/api/discover/browses/coverage/items?filterValue=Arizona%20%5BTerritory%5D\")",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" \"https://stage.dspace.firearmsresearchcenter.org/server/api/discover/search/objects?query=Arizona%20%5BTerritory%5D\")",
+      "Bash(curl -s \"https://stage.dspace.firearmsresearchcenter.org/server/api/discover/search/objects?query=Arizona%20%5C%5BTerritory%5C%5D\")",
+      "Read(//f/projects/FRC/config/**)",
+      "PowerShell(Select-String -Path \"f:\\\\projects\\\\FRC\\\\config\\\\config.dev.yml\" -Pattern \"script\" | ForEach-Object { \"$\\($_.LineNumber\\): $\\($_.Line\\)\" }; \"---config.yml---\"; Select-String -Path \"f:\\\\projects\\\\FRC\\\\config\\\\config.yml\" -Pattern \"headTags|script|escaper\" | ForEach-Object { \"$\\($_.LineNumber\\): $\\($_.Line\\)\" })",
+      "Bash(curl -s 'https://stage.dspace.firearmsresearchcenter.org/server/api/discover/browses/coverage/entries?scope=9864e1c5-8193-4cda-90dc-152701a3c7b2&startsWith=%5C%5BTerritory%5C%5D')"
+    ]
+  }
+}

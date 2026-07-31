@@ -113,7 +113,7 @@ export class BrowseService {
           args.push(`size=${options.pagination.pageSize}`);
         }
         if (isNotEmpty(options.startsWith)) {
-          args.push(`startsWith=${options.startsWith}`);
+          args.push(`startsWith=${encodeURIComponent(options.startsWith)}`);
         }
         if (isNotEmpty(args)) {
           href = new URLCombiner(href, `?${args.join('&')}`).toString();
@@ -155,7 +155,7 @@ export class BrowseService {
           args.push(`size=${options.pagination.pageSize}`);
         }
         if (isNotEmpty(options.startsWith)) {
-          args.push(`startsWith=${options.startsWith}`);
+          args.push(`startsWith=${encodeURIComponent(options.startsWith)}`);
         }
         if (isNotEmpty(filterValue)) {
           args.push(`filterValue=${encodeURIComponent(filterValue)}`);
